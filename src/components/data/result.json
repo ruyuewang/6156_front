@@ -1,0 +1,1640 @@
+[
+    {
+        "id": "XsXLVWr1UZWVhKThNvNiaA",
+        "cuisine": "Chinese",
+        "name": "Blue Willow",
+        "rating": 4.5,
+        "location": [
+            "40 W 56th St",
+            "New York, NY 10019"
+        ],
+        "zip_code": "10019",
+        "phone": "+12122132299",
+        "categories": [
+            {
+                "alias": "szechuan",
+                "title": "Szechuan"
+            }
+        ],
+        "review_count": 424,
+        "coordinates": "{'latitude': 40.76292, 'longitude': -73.976546}",
+        "url": "https://www.yelp.com/biz/blue-willow-%E5%A4%9C%E6%9D%A5%E6%B9%98-new-york-2?adjust_creative=xhk9hmMP8OeE6FaEbGhPVg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xhk9hmMP8OeE6FaEbGhPVg",
+        "insertedAtTimestamp": "02-24-2022, 16:34:08",
+        "img_url": "https://s3-media2.fl.yelpcdn.com/bphoto/1E59vOqmXZHBlJe0lLBHtA/o.jpg",
+        "transactions": [
+            "pickup",
+            "delivery"
+        ],
+        "summary": "It was my first time trying actual Chinese food and I loved it. Let's start with the food, i tried an amazing Seafood Fried Rice as a main and I loved it, i... The best and most authentic tasting restaurant I've ever eaten at in the US (and i've been looking for a long time)! Ever since I found Blue Willow on Yelp... Wonderful place. Tasty food! And best service. Thank you, Terry! White wine, jasmine tea! Best! Forever! Love!"
+    },
+    {
+        "id": "0CjK3esfpFcxIopebzjFxA",
+        "cuisine": "Chinese",
+        "name": "Joe's Shanghai",
+        "rating": 4,
+        "location": [
+            "46 Bowery St",
+            "New York, NY 10013"
+        ],
+        "zip_code": "10013",
+        "phone": "+12122338888",
+        "categories": [
+            {
+                "alias": "shanghainese",
+                "title": "Shanghainese"
+            },
+            {
+                "alias": "seafood",
+                "title": "Seafood"
+            },
+            {
+                "alias": "noodles",
+                "title": "Noodles"
+            }
+        ],
+        "review_count": 6610,
+        "coordinates": "{'latitude': 40.7156608, 'longitude': -73.9967012}",
+        "url": "https://www.yelp.com/biz/joes-shanghai-new-york-2?adjust_creative=xhk9hmMP8OeE6FaEbGhPVg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xhk9hmMP8OeE6FaEbGhPVg",
+        "insertedAtTimestamp": "02-24-2022, 16:34:09",
+        "img_url": "https://s3-media3.fl.yelpcdn.com/bphoto/kNHjVjpJzY47sgilvLFyGw/o.jpg",
+        "transactions": [
+            "pickup",
+            "delivery"
+        ],
+        "summary": "Every single time I visit NYC, I make it a point to stop at Joe's Shanghai. Yes, you'll have to wait, but it's SO worth it. Basically, you put your name... We came here because it was recommended for their soup dumplings. We primarily only ordered the pork soup dumplings, which was perfect for the cold day that... Came here for a quick bite, ordered one crab soup dumpling and one pork soup dumpling. I remember the soup dumplings being a low cost food but now it's over..."
+    },
+    {
+        "id": "LT0yyLNM84EiJj9DL0rfHA",
+        "cuisine": "Chinese",
+        "name": "Hui Restaurant & Bar",
+        "rating": 4.5,
+        "location": [
+            "314 E 70th St",
+            "New York, NY 10021"
+        ],
+        "zip_code": "10021",
+        "phone": "+16468690339",
+        "categories": [
+            {
+                "alias": "bars",
+                "title": "Bars"
+            },
+            {
+                "alias": "szechuan",
+                "title": "Szechuan"
+            },
+            {
+                "alias": "dimsum",
+                "title": "Dim Sum"
+            }
+        ],
+        "review_count": 213,
+        "coordinates": "{'latitude': 40.76701, 'longitude': -73.95846}",
+        "url": "https://www.yelp.com/biz/hui-restaurant-and-bar-new-york?adjust_creative=xhk9hmMP8OeE6FaEbGhPVg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xhk9hmMP8OeE6FaEbGhPVg",
+        "insertedAtTimestamp": "02-24-2022, 16:34:09",
+        "img_url": "https://s3-media3.fl.yelpcdn.com/bphoto/lJuUFXTyQ5Q3yu3_oE-8Mg/o.jpg",
+        "transactions": [
+            "pickup",
+            "delivery"
+        ],
+        "summary": "Been ordering takeout from here during the pandemic and it's always been a positive experience. \nThe food is always hot and every dish we've ordered has... Came here for lunch with a friend, and the non-conspicuous entrance belies the fact that the restaurant is actually larger and nicer than it looks on the... Yay for Hui!!! Hui (pronounced \"hway\" in Mandarin) is a 100% legit Szechuan spot with the best versions of Twice Cooked Pork, Dan Dan Noodles, and Spicy..."
+    },
+    {
+        "id": "EmJ7rfmv2y6lQZxgA8U__g",
+        "cuisine": "Chinese",
+        "name": "Red Peony Chinese Cuisine",
+        "rating": 4.5,
+        "location": [
+            "24 W 56th St",
+            "New York, NY 10019"
+        ],
+        "zip_code": "10019",
+        "phone": "+12123808883",
+        "categories": [
+            {
+                "alias": "shanghainese",
+                "title": "Shanghainese"
+            },
+            {
+                "alias": "szechuan",
+                "title": "Szechuan"
+            },
+            {
+                "alias": "cantonese",
+                "title": "Cantonese"
+            }
+        ],
+        "review_count": 462,
+        "coordinates": "{'latitude': 40.76278, 'longitude': -73.97589}",
+        "url": "https://www.yelp.com/biz/red-peony-chinese-cuisine-new-york-4?adjust_creative=xhk9hmMP8OeE6FaEbGhPVg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xhk9hmMP8OeE6FaEbGhPVg",
+        "insertedAtTimestamp": "02-24-2022, 16:34:10",
+        "img_url": "https://s3-media4.fl.yelpcdn.com/bphoto/bD0jgTj0uJdBsd2vrN-JLQ/o.jpg",
+        "transactions": [
+            "pickup",
+            "delivery"
+        ],
+        "summary": "Apparently this restaurant used to be Joe Shanghai but switched to Red peony hence why the food is so similar. But the food is really good and I loved the... Midtown East has weird dining options. The neighborhood caters to the office crowd during the week and on the weekends to the tourists. Either way, the sit... Quite a cute place. It was a little squishy because it was quite crowded but food wise it was quite good.\n\nI got their general Gao's chicken which was..."
+    },
+    {
+        "id": "xq0cX_DgxiJMXwhmEl9kUA",
+        "cuisine": "Chinese",
+        "name": "Café China",
+        "rating": 4,
+        "location": [
+            "59 W 37th St",
+            "New York, NY 10018"
+        ],
+        "zip_code": "10018",
+        "phone": "+12122132810",
+        "categories": [
+            {
+                "alias": "szechuan",
+                "title": "Szechuan"
+            }
+        ],
+        "review_count": 1726,
+        "coordinates": "{'latitude': 40.75157, 'longitude': -73.98584}",
+        "url": "https://www.yelp.com/biz/caf%C3%A9-china-new-york-2?adjust_creative=xhk9hmMP8OeE6FaEbGhPVg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xhk9hmMP8OeE6FaEbGhPVg",
+        "insertedAtTimestamp": "02-24-2022, 16:34:10",
+        "img_url": "https://s3-media1.fl.yelpcdn.com/bphoto/UhHqxEX2epOvrBFI2pgRzg/o.jpg",
+        "transactions": [
+            "pickup",
+            "delivery"
+        ],
+        "summary": "Love their new location! The interior is very nice, and the food is the same (as excellent as it was before). We had:\n Mapo Tofu (), \nCumin Lamb (),... Delicious Chinese food !\n\n They have separated outdoor tables in addition to indoor seating.\n\n We ordered the pickled whole fish with green beans.\n\n Food... Probably the best intro to mala or szechuan restaurant, not to say theyre not authentic. \n\nI really like the chungking chicken, crispy and its not really..."
+    },
+    {
+        "id": "h0pRCiJDrCN7tm3VX5tILQ",
+        "cuisine": "Chinese",
+        "name": "CHILI",
+        "rating": 5,
+        "location": [
+            "13 E 37th St",
+            "New York, NY 10016"
+        ],
+        "zip_code": "10016",
+        "phone": "+16468820666",
+        "categories": [
+            {
+                "alias": "szechuan",
+                "title": "Szechuan"
+            },
+            {
+                "alias": "dimsum",
+                "title": "Dim Sum"
+            }
+        ],
+        "review_count": 174,
+        "coordinates": "{'latitude': 40.75002, 'longitude': -73.98215}",
+        "url": "https://www.yelp.com/biz/chili-new-york?adjust_creative=xhk9hmMP8OeE6FaEbGhPVg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xhk9hmMP8OeE6FaEbGhPVg",
+        "insertedAtTimestamp": "02-24-2022, 16:34:10",
+        "img_url": "https://s3-media2.fl.yelpcdn.com/bphoto/kXEGv1n69TKeZuvkQxyKGw/o.jpg",
+        "transactions": [
+            "pickup",
+            "delivery"
+        ],
+        "summary": "Actually American nice type Szechuan food, not bad. while not many choices for us, and the price is a bit of high , compared with same food in other places.... A lovely classic Sichuan restaurant that has a delightful 1940s atmosphere and tasty complex dishes of tea infused duck fried rice, tender beef scallion... Clean food, incredible service, in the heart of NYC without ripping out the heart of your wallet. Will come again. \n\nThe only thing that was decent, not..."
+    },
+    {
+        "id": "ojbH3wnRu050hRhkmoxRiA",
+        "cuisine": "Chinese",
+        "name": "Han Dynasty",
+        "rating": 4,
+        "location": [
+            "215 W 85th St",
+            "New York, NY 10024"
+        ],
+        "zip_code": "10024",
+        "phone": "+12128589060",
+        "categories": [
+            {
+                "alias": "szechuan",
+                "title": "Szechuan"
+            }
+        ],
+        "review_count": 638,
+        "coordinates": "{'latitude': 40.78752, 'longitude': -73.97647}",
+        "url": "https://www.yelp.com/biz/han-dynasty-new-york-4?adjust_creative=xhk9hmMP8OeE6FaEbGhPVg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xhk9hmMP8OeE6FaEbGhPVg",
+        "insertedAtTimestamp": "02-24-2022, 16:34:10",
+        "img_url": "https://s3-media3.fl.yelpcdn.com/bphoto/-aIQqghSAjISvaYL-9w5oA/o.jpg",
+        "transactions": [
+            "pickup",
+            "delivery"
+        ],
+        "summary": "Great Szechuan on the UWS.\n\nOn 85th & Broadway this popular restaurant is a great find.  I did take out tonight and it was amazing.   When my husband picked... This was a wonderful and unexpected find in our usual quest for new and interesting places to eat.\n\nLocated on the UWS, Han is a rather large space set up... It has been almost 10 year since I was introduced to this beloved Szechuan restaurant based in Philadelphia. This is my usual go-to restaurant if I'm..."
+    },
+    {
+        "id": "oowNI_aUmGEFa_VW8BFgRg",
+        "cuisine": "Chinese",
+        "name": "Tri Dim Shanghai",
+        "rating": 4,
+        "location": [
+            "1378 3rd Ave",
+            "New York, NY 10075"
+        ],
+        "zip_code": "10075",
+        "phone": "+12125853388",
+        "categories": [
+            {
+                "alias": "shanghainese",
+                "title": "Shanghainese"
+            },
+            {
+                "alias": "dimsum",
+                "title": "Dim Sum"
+            },
+            {
+                "alias": "szechuan",
+                "title": "Szechuan"
+            }
+        ],
+        "review_count": 446,
+        "coordinates": "{'latitude': 40.773951, 'longitude': -73.957927}",
+        "url": "https://www.yelp.com/biz/tri-dim-shanghai-new-york-2?adjust_creative=xhk9hmMP8OeE6FaEbGhPVg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xhk9hmMP8OeE6FaEbGhPVg",
+        "insertedAtTimestamp": "02-24-2022, 16:34:11",
+        "img_url": "https://s3-media1.fl.yelpcdn.com/bphoto/-HycyO1XNiKGN8q28RYATg/o.jpg",
+        "transactions": [
+            "restaurant_reservation",
+            "pickup",
+            "delivery"
+        ],
+        "summary": "Super yummy Chinese food!!!!!!\nFrom the dim sum, to slippery chicken , sesame chicken Dan Dan noodles ... all great !\nLovely atmosphere as well. Already... Food was tasty (4 out of 5 stars). But service was lacking. Also, they did not check vaccination status prior to entering the establishment. I thought it... Finally a good Chinese place in the upper Eastside. We had a lot of dim sum which was all amazing. The big downside and a star off is the cost. Eight..."
+    },
+    {
+        "id": "UK1oGbr8GU2rufpnJR4-HQ",
+        "cuisine": "Chinese",
+        "name": "Joe's Home of Soup Dumplings",
+        "rating": 4.5,
+        "location": [
+            "7 E 48th St",
+            "between Fifth and Madison avenues",
+            "New York, NY 10017"
+        ],
+        "zip_code": "10017",
+        "phone": "+12123333868",
+        "categories": [
+            {
+                "alias": "shanghainese",
+                "title": "Shanghainese"
+            },
+            {
+                "alias": "noodles",
+                "title": "Noodles"
+            }
+        ],
+        "review_count": 166,
+        "coordinates": "{'latitude': 40.75723, 'longitude': -73.97702}",
+        "url": "https://www.yelp.com/biz/joes-home-of-soup-dumplings-new-york?adjust_creative=xhk9hmMP8OeE6FaEbGhPVg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xhk9hmMP8OeE6FaEbGhPVg",
+        "insertedAtTimestamp": "02-24-2022, 16:34:11",
+        "img_url": "https://s3-media1.fl.yelpcdn.com/bphoto/GY04xwX3RMnbSLmPizy1eA/o.jpg",
+        "transactions": [
+            "pickup",
+            "delivery"
+        ],
+        "summary": "4.5 that rounds up to 5. Great soup dumplings that are much larger in size than normal.  We stopped in for a snack so ordered 12 pork soup dumplings which... Ordered: Pork Steamed Buns ($9.25)\n\nFinally satisfied my soup dumpling craving! When I went to pick up my order, the host was very friendly. It was also... Walked in to grab some food for pickup and the food was ready within 15 minutes.\n\nOrdered a pork soup dumplings and hot & sour soup. Loved it! Def will go..."
+    },
+    {
+        "id": "1jAB_uaI8-P_wSqOo2S3KQ",
+        "cuisine": "Chinese",
+        "name": "Mazu Szechuan",
+        "rating": 4.5,
+        "location": [
+            "495 3rd Ave",
+            "New York, NY 10016"
+        ],
+        "zip_code": "10016",
+        "phone": "+16466093388",
+        "categories": [
+            {
+                "alias": "szechuan",
+                "title": "Szechuan"
+            },
+            {
+                "alias": "dimsum",
+                "title": "Dim Sum"
+            },
+            {
+                "alias": "wine_bars",
+                "title": "Wine Bars"
+            }
+        ],
+        "review_count": 82,
+        "coordinates": "{'latitude': 40.745234, 'longitude': -73.97812}",
+        "url": "https://www.yelp.com/biz/mazu-szechuan-new-york?adjust_creative=xhk9hmMP8OeE6FaEbGhPVg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xhk9hmMP8OeE6FaEbGhPVg",
+        "insertedAtTimestamp": "02-24-2022, 16:34:11",
+        "img_url": "https://s3-media1.fl.yelpcdn.com/bphoto/8cFEkh35jpLEJ7YNM1uOkg/o.jpg",
+        "transactions": [
+            "restaurant_reservation",
+            "pickup",
+            "delivery"
+        ],
+        "summary": "Mazu is our current go-to Szechuan restaurant in the lovely Kips Bay area, especially during these chilly winter months.\n\nI often judge many Chinese... My overall takeaway from Mazu Szechuan is They Love Oil. It seems that the more spicy it gets, as per my request, then the more oily. I have eaten Szechuan... We came here on a whim and the food was absolutely amazing. We had the Szechuan dumplings (two beautiful portions) and they were the absolute hero of the..."
+    },
+    {
+        "id": "lynQoI3w_pzYfHGeuUU-Qg",
+        "cuisine": "Chinese",
+        "name": "Shu Jiao Fu Zhou Cuisine Restaurant",
+        "rating": 4.5,
+        "location": [
+            "295 Grand St",
+            "New York, NY 10002"
+        ],
+        "zip_code": "10002",
+        "phone": "+12126252532",
+        "categories": [
+            {
+                "alias": "chinese",
+                "title": "Chinese"
+            }
+        ],
+        "review_count": 983,
+        "coordinates": "{'latitude': 40.7174109, 'longitude': -73.9920876}",
+        "url": "https://www.yelp.com/biz/shu-jiao-fu-zhou-cuisine-restaurant-new-york?adjust_creative=xhk9hmMP8OeE6FaEbGhPVg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xhk9hmMP8OeE6FaEbGhPVg",
+        "insertedAtTimestamp": "02-24-2022, 16:34:12",
+        "img_url": "https://s3-media2.fl.yelpcdn.com/bphoto/jTPxWlbxeIOZeFyWKGyXIw/o.jpg",
+        "transactions": [
+            "pickup",
+            "delivery"
+        ],
+        "summary": "Super cheap and delicious. I recommend the pork and chive dumplings. Service is so fast For the price it's definitely 5 star. We ordered chicken and chives dumplings and pork and chive dumplings and beef noodle soup with 2 diet cokes for $15.... Wowee Wow!!!\n\nNot much to say.\nInexpensive, a small menu, popular with the locals, everyone incredibly friendly & welcoming.\n\nPork & Chive dumplings,..."
+    },
+    {
+        "id": "Ece_DRuD1yQjRPJBAebRpw",
+        "cuisine": "Chinese",
+        "name": "Kung Fu Little Steamed Buns Ramen",
+        "rating": 3.5,
+        "location": [
+            "146 E 55th St",
+            "New York, NY 10022"
+        ],
+        "zip_code": "10022",
+        "phone": "+12128048556",
+        "categories": [
+            {
+                "alias": "ramen",
+                "title": "Ramen"
+            },
+            {
+                "alias": "chinese",
+                "title": "Chinese"
+            }
+        ],
+        "review_count": 343,
+        "coordinates": "{'latitude': 40.7592514705491, 'longitude': -73.9694294705987}",
+        "url": "https://www.yelp.com/biz/kung-fu-little-steamed-buns-ramen-new-york-2?adjust_creative=xhk9hmMP8OeE6FaEbGhPVg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xhk9hmMP8OeE6FaEbGhPVg",
+        "insertedAtTimestamp": "02-24-2022, 16:34:12",
+        "img_url": "https://s3-media3.fl.yelpcdn.com/bphoto/tZDrL4Ss3TMrHL5tC_eP4w/o.jpg",
+        "transactions": [
+            "pickup",
+            "delivery"
+        ],
+        "summary": "I've been to this place quite a few times over the years and have ordered both takeout and eaten at the restaurant.  This place is a solid 3.5 holistically,... As a noodle fanatic and a veteran from Flushing, Queens - where you can get a bowl of delicious and fresh steamy noodles at about any time you want..this... Came in really early before flight and was basically the first customer there. Plates/ wooden chopsticks/ spoons were saran wrapped which I really liked and..."
+    },
+    {
+        "id": "FXhSEZfIqjMZh4hR0_8jMQ",
+        "cuisine": "Chinese",
+        "name": "China Xiang",
+        "rating": 4,
+        "location": [
+            "360 W 42nd Street",
+            "New York, NY 10036"
+        ],
+        "zip_code": "10036",
+        "phone": "+12129676088",
+        "categories": [
+            {
+                "alias": "chinese",
+                "title": "Chinese"
+            }
+        ],
+        "review_count": 517,
+        "coordinates": "{'latitude': 40.7582902125633, 'longitude': -73.9925113993899}",
+        "url": "https://www.yelp.com/biz/china-xiang-%E4%B8%AD%E5%9B%BD%E6%B9%98-new-york-2?adjust_creative=xhk9hmMP8OeE6FaEbGhPVg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xhk9hmMP8OeE6FaEbGhPVg",
+        "insertedAtTimestamp": "02-24-2022, 16:34:12",
+        "img_url": "https://s3-media3.fl.yelpcdn.com/bphoto/MC6-poc5wb7mP-jO7qfHHw/o.jpg",
+        "transactions": [
+            "pickup",
+            "delivery"
+        ],
+        "summary": "Highly recommend!\nPork soup dumplings were sooo good - perfect pick me up before a long night in the city that never sleeps!\nHave your ID and Vax card ready... Visited this restaurant with a girl, wanted to try something new form food. Traditional European cuisine has already become boring, but we don't really like... Good Chinese food but not authentic Hunan food according to my friend who is from Hunan.\n\nFor a party of 2, we got 3 dishes to share: Sauteed Hunan Smoked..."
+    },
+    {
+        "id": "bVkjBJlAIwKAj9Aw1KVWjA",
+        "cuisine": "Chinese",
+        "name": "Dim Sum Palace",
+        "rating": 4,
+        "location": [
+            "334 W 46th St",
+            "New York, NY 10036"
+        ],
+        "zip_code": "10036",
+        "phone": "+16468611910",
+        "categories": [
+            {
+                "alias": "dimsum",
+                "title": "Dim Sum"
+            },
+            {
+                "alias": "cantonese",
+                "title": "Cantonese"
+            }
+        ],
+        "review_count": 1440,
+        "coordinates": "{'latitude': 40.76015, 'longitude': -73.9893699}",
+        "url": "https://www.yelp.com/biz/dim-sum-palace-new-york-8?adjust_creative=xhk9hmMP8OeE6FaEbGhPVg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xhk9hmMP8OeE6FaEbGhPVg",
+        "insertedAtTimestamp": "02-24-2022, 16:34:12",
+        "img_url": "https://s3-media4.fl.yelpcdn.com/bphoto/NqnWxno1sa9nbrb1YlvbkA/o.jpg",
+        "transactions": [
+            "pickup",
+            "delivery"
+        ],
+        "summary": "Amazing food! Absolutely loved the dumplings! Ordered and the Vegetarian and Non-vegetarian platters, mixed mushroom dumplings, chicken juicy buns and it... The food was very good. Large portions. I was very skeptical since all of my kids are very picky about their food. No complaints from them. Service was good. I absolutely LOVED this place!  I went for lunch on a Monday and was seated immediately.  They may have dim sum carts on weekends, but I ordered straight..."
+    },
+    {
+        "id": "BNaveJmi-OUGKG9sRfrIhA",
+        "cuisine": "Chinese",
+        "name": "Mr. Sun",
+        "rating": 4.5,
+        "location": [
+            "48 W 48th St",
+            "New York, NY 10036"
+        ],
+        "zip_code": "10036",
+        "phone": "+17183169811",
+        "categories": [
+            {
+                "alias": "dimsum",
+                "title": "Dim Sum"
+            },
+            {
+                "alias": "seafood",
+                "title": "Seafood"
+            }
+        ],
+        "review_count": 90,
+        "coordinates": "{'latitude': 40.75809, 'longitude': -73.98026}",
+        "url": "https://www.yelp.com/biz/mr-sun-new-york?adjust_creative=xhk9hmMP8OeE6FaEbGhPVg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xhk9hmMP8OeE6FaEbGhPVg",
+        "insertedAtTimestamp": "02-24-2022, 16:34:13",
+        "img_url": "https://s3-media2.fl.yelpcdn.com/bphoto/jswYzFLbD07Xk8dR81_mIA/o.jpg",
+        "transactions": [
+            "restaurant_reservation",
+            "pickup",
+            "delivery"
+        ],
+        "summary": "It is always satisfying when you find a small gem of a place that has great food. Mr. Sun chef, I will eat your Peking duck everyday if I lived in NYC. One... It was New Year's day and we walked out of our tiny NYC apartment expecting empty streets and nothing open.  We were wrong, the streets were packed with... Mr. Sun's signage outside the restaurant got me a \"Michelin Star Chef and the food  and service lost me at \"Michelin Star Chef\".\n\nWe for dinner and was..."
+    },
+    {
+        "id": "xCHApgtkLpEyh0lz-uhZvg",
+        "cuisine": "Chinese",
+        "name": "Szechuan Garden",
+        "rating": 4,
+        "location": [
+            "239 W 105th St",
+            "New York, NY 10025"
+        ],
+        "zip_code": "10025",
+        "phone": "+12128658808",
+        "categories": [
+            {
+                "alias": "szechuan",
+                "title": "Szechuan"
+            },
+            {
+                "alias": "dimsum",
+                "title": "Dim Sum"
+            },
+            {
+                "alias": "seafood",
+                "title": "Seafood"
+            }
+        ],
+        "review_count": 345,
+        "coordinates": "{'latitude': 40.80053, 'longitude': -73.967586}",
+        "url": "https://www.yelp.com/biz/szechuan-garden-new-york?adjust_creative=xhk9hmMP8OeE6FaEbGhPVg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xhk9hmMP8OeE6FaEbGhPVg",
+        "insertedAtTimestamp": "02-24-2022, 16:34:13",
+        "img_url": "https://s3-media1.fl.yelpcdn.com/bphoto/g0szneLpAM3H6Ur6qyv_Ag/o.jpg",
+        "transactions": [
+            "pickup",
+            "delivery"
+        ],
+        "summary": "I had a delicious kong pal chicken lunch special from here. It also came with a crispy spring roll. \n\nGood portion and cooked very fast. If you are in the... Today was the second time in maybe a month that I've been here. I wish I would've remembered to take pictures (next time, next time). The first time I went... This is where I fell in love with Mapo Tofu. \n\nI loved it so much at first bite, I went into the YouTube black hole researching the best recipe (it doesn't..."
+    },
+    {
+        "id": "0dDCDQz7DrKkSvu9h2hcQw",
+        "cuisine": "Chinese",
+        "name": "Chow House",
+        "rating": 4.5,
+        "location": [
+            "181 Bleecker St",
+            "New York, NY 10012"
+        ],
+        "zip_code": "10012",
+        "phone": "+12128371021",
+        "categories": [
+            {
+                "alias": "szechuan",
+                "title": "Szechuan"
+            },
+            {
+                "alias": "noodles",
+                "title": "Noodles"
+            },
+            {
+                "alias": "soup",
+                "title": "Soup"
+            }
+        ],
+        "review_count": 491,
+        "coordinates": "{'latitude': 40.72915, 'longitude': -74.00072}",
+        "url": "https://www.yelp.com/biz/chow-house-new-york?adjust_creative=xhk9hmMP8OeE6FaEbGhPVg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xhk9hmMP8OeE6FaEbGhPVg",
+        "insertedAtTimestamp": "02-24-2022, 16:34:13",
+        "img_url": "https://s3-media3.fl.yelpcdn.com/bphoto/kzeClsI9_2tkHqKScotx1Q/o.jpg",
+        "transactions": [
+            "restaurant_reservation",
+            "pickup",
+            "delivery"
+        ],
+        "summary": "Came here for a quick lunch yesterday with some coworkers. We were lucky to have gotten a seat for 8 without a reservation, I'd recommend one tho. I've... I made a reservation for 5 at 7:30pm. Our party became four. I'm not sure if that changed when we got seated, but we waited about 20 minutes before a table... Had a family dinner here recently before heading a couple blocks over to watch the Monday Night Magic show. The meal was delightful! Food so fresh and..."
+    },
+    {
+        "id": "8ZBbl3VN-cu6PFOL0D7-8A",
+        "cuisine": "Chinese",
+        "name": "Hunan Village",
+        "rating": 4.5,
+        "location": [
+            "339 Lexington Ave New York Ny",
+            "New York, NY 10016"
+        ],
+        "zip_code": "10016",
+        "phone": "+16466924888",
+        "categories": [
+            {
+                "alias": "szechuan",
+                "title": "Szechuan"
+            },
+            {
+                "alias": "dimsum",
+                "title": "Dim Sum"
+            },
+            {
+                "alias": "cantonese",
+                "title": "Cantonese"
+            }
+        ],
+        "review_count": 21,
+        "coordinates": "{'latitude': 40.749688, 'longitude': -73.977171}",
+        "url": "https://www.yelp.com/biz/hunan-village-new-york?adjust_creative=xhk9hmMP8OeE6FaEbGhPVg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xhk9hmMP8OeE6FaEbGhPVg",
+        "insertedAtTimestamp": "02-24-2022, 16:34:13",
+        "img_url": "https://s3-media1.fl.yelpcdn.com/bphoto/Kd1iW7VJ6IS3w0Wi2KrA5g/o.jpg",
+        "transactions": [
+            "pickup",
+            "delivery"
+        ],
+        "summary": "Always passed by this place and never gave it a thought until my coworker mentioned how good their food was. The inside is pretty fair sized and they have a... Fast and filling lunch specials $10.95 for choice of entree, white/brown/veggie fried rice, and hot and sour/wonton soup or spring rolls..... yes please!!... Almost 5 star, just one small issue.  Really good, and I love this kind of Chinese food.  There aren't a lot of places to get it, and of those that exist,..."
+    },
+    {
+        "id": "BPErPpKSNluwcjbKRgze3w",
+        "cuisine": "Chinese",
+        "name": "Xi'an Famous Foods",
+        "rating": 4,
+        "location": [
+            "328 E 78th St",
+            "New York, NY 10075"
+        ],
+        "zip_code": "10075",
+        "phone": "+12127862068",
+        "categories": [
+            {
+                "alias": "chinese",
+                "title": "Chinese"
+            },
+            {
+                "alias": "noodles",
+                "title": "Noodles"
+            },
+            {
+                "alias": "burgers",
+                "title": "Burgers"
+            }
+        ],
+        "review_count": 590,
+        "coordinates": "{'latitude': 40.77197, 'longitude': -73.95452}",
+        "url": "https://www.yelp.com/biz/xian-famous-foods-new-york-38?adjust_creative=xhk9hmMP8OeE6FaEbGhPVg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xhk9hmMP8OeE6FaEbGhPVg",
+        "insertedAtTimestamp": "02-24-2022, 16:34:14",
+        "img_url": "https://s3-media2.fl.yelpcdn.com/bphoto/7OoN4x7q1cSUZP_rkI2r_A/o.jpg",
+        "transactions": [
+            "delivery"
+        ],
+        "summary": "My NY friend's \"noodle place,\" and oh man....so worth it. It was my first experience with hand pulled noodles, and it was so freaking delicious. At the... A spicy lunch on a super hot day since I went back in the last summer. \n\nHighlights of the menu:\n1. Spicy cumin lamb hand-ripped noodles\n2. Stewed pork... I love Xi'an Famous Foods. I love everything I've tried here, and I cannot speak highly enough of this establishment. \n\nThe food is DELICIOUS, the plates..."
+    },
+    {
+        "id": "jc7lVTvmYMIK5RNpENtS6w",
+        "cuisine": "Chinese",
+        "name": "Szechuan Mountain House",
+        "rating": 4.5,
+        "location": [
+            "23 St Marks Pl",
+            "New York, NY 10003"
+        ],
+        "zip_code": "10003",
+        "phone": "+19173883866",
+        "categories": [
+            {
+                "alias": "szechuan",
+                "title": "Szechuan"
+            }
+        ],
+        "review_count": 473,
+        "coordinates": "{'latitude': 40.72911, 'longitude': -73.98858}",
+        "url": "https://www.yelp.com/biz/szechuan-mountain-house-new-york-2?adjust_creative=xhk9hmMP8OeE6FaEbGhPVg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xhk9hmMP8OeE6FaEbGhPVg",
+        "insertedAtTimestamp": "02-24-2022, 16:34:14",
+        "img_url": "https://s3-media2.fl.yelpcdn.com/bphoto/DkO-lKVPNYyvJMRl8es3WQ/o.jpg",
+        "transactions": [
+            "pickup",
+            "delivery"
+        ],
+        "summary": "Came on a Friday and there was a 40 minute wait for 3. \n\nI really like Cheli next door so when I heard it's the same owner I had to try this spot out.... Soo my friend's friend highly recommended this place and said it was \"life changing\" so we made time to stop by here on one of our last days in NY. We came... Szechuan Mountain House is normally not an easy place to get into. Not that it requires reservation months in advance, but rather because they only do..."
+    },
+    {
+        "id": "qrncvjkiKN5Z-JC06ygy6A",
+        "cuisine": "Chinese",
+        "name": "Hutong",
+        "rating": 3.5,
+        "location": [
+            "731 Lexington Ave",
+            "New York, NY 10022"
+        ],
+        "zip_code": "10022",
+        "phone": "+12127584800",
+        "categories": [
+            {
+                "alias": "dimsum",
+                "title": "Dim Sum"
+            },
+            {
+                "alias": "cocktailbars",
+                "title": "Cocktail Bars"
+            },
+            {
+                "alias": "breakfast_brunch",
+                "title": "Breakfast & Brunch"
+            }
+        ],
+        "review_count": 385,
+        "coordinates": "{'latitude': 40.761551, 'longitude': -73.967443}",
+        "url": "https://www.yelp.com/biz/hutong-new-york?adjust_creative=xhk9hmMP8OeE6FaEbGhPVg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xhk9hmMP8OeE6FaEbGhPVg",
+        "insertedAtTimestamp": "02-24-2022, 16:34:14",
+        "img_url": "https://s3-media2.fl.yelpcdn.com/bphoto/dHr3_NeA-26yGA0hupirmg/o.jpg",
+        "transactions": [
+            "pickup",
+            "delivery"
+        ],
+        "summary": "On Friday, February 11th I was attending the Private Birthday Party at Hutong NY NY. This was also my very first visit to this upscale restaurant and I'd... Quiet the room! Clear the throat! And elongate the vowels: this place gets a Merlin FIIIIIIIIIIVEEEEEEE! (#MerlinFive) For those who didn't give it this... Flaming duck while unnecessary is a nice party trick for a little extra char and flavor (and IG post) I think the last duck we had at Uluh was better.\n\nHu..."
+    },
+    {
+        "id": "w3wKbjuNCZnYoPOr-FCk5w",
+        "cuisine": "Chinese",
+        "name": "New Moon",
+        "rating": 4,
+        "location": [
+            "547 2nd Ave",
+            "New York, NY 10016"
+        ],
+        "zip_code": "10016",
+        "phone": "+12127792828",
+        "categories": [
+            {
+                "alias": "chinese",
+                "title": "Chinese"
+            }
+        ],
+        "review_count": 188,
+        "coordinates": "{'latitude': 40.742569, 'longitude': -73.977856}",
+        "url": "https://www.yelp.com/biz/new-moon-new-york?adjust_creative=xhk9hmMP8OeE6FaEbGhPVg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xhk9hmMP8OeE6FaEbGhPVg",
+        "insertedAtTimestamp": "02-24-2022, 16:34:14",
+        "img_url": "https://s3-media3.fl.yelpcdn.com/bphoto/9t-DzSFbxWmJvRxL2b5aNg/o.jpg",
+        "transactions": [
+            "pickup",
+            "delivery"
+        ],
+        "summary": "Clean place. Food taste pretty good and the quality seems prettt good. I go here at least 2xs a week. A staple in my weekly routine is my Chinese food orders on sundays. For a while, this has been the spot that has sponsored that tradition.\n\nThis is a... This place is like an upscale Chinese fast food place. Their vibe is like a Chinese fast food takeout place and the menu certainly had those items but then..."
+    },
+    {
+        "id": "X8ZS-dgiMIJvhwf9SaDnjw",
+        "cuisine": "Chinese",
+        "name": "Wah Fung No 1",
+        "rating": 4.5,
+        "location": [
+            "79 Chrystie St",
+            "New York, NY 10002"
+        ],
+        "zip_code": "10002",
+        "phone": "+12129255175",
+        "categories": [
+            {
+                "alias": "hotdogs",
+                "title": "Fast Food"
+            },
+            {
+                "alias": "cantonese",
+                "title": "Cantonese"
+            }
+        ],
+        "review_count": 1705,
+        "coordinates": "{'latitude': 40.71735, 'longitude': -73.99457}",
+        "url": "https://www.yelp.com/biz/wah-fung-no-1-new-york-2?adjust_creative=xhk9hmMP8OeE6FaEbGhPVg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xhk9hmMP8OeE6FaEbGhPVg",
+        "insertedAtTimestamp": "02-24-2022, 16:34:15",
+        "img_url": "https://s3-media1.fl.yelpcdn.com/bphoto/ODYC7c1NSI1EKceznEiWjA/o.jpg",
+        "transactions": [
+            "delivery"
+        ],
+        "summary": "All the hype and reviews led me to wait at this establishment where lined up for over an hour. For the price and taste of the food costing under 30 dollars... Definitely #1 because of price and flavor! The roast pork was tender and juicy, and the duck was seasoned perfectly. This was such an authentic experience... This place lives up to the hype with their big portions, bomb food, and great price. \n\nI shared a large with my bf and we got the cha siu, roasted pork, and..."
+    },
+    {
+        "id": "4FD0TAxe70nb3ngk3sXF9Q",
+        "cuisine": "Chinese",
+        "name": "Uluh",
+        "rating": 4.5,
+        "location": [
+            "152 2nd Ave",
+            "Ste A",
+            "New York, NY 10003"
+        ],
+        "zip_code": "10003",
+        "phone": "+19172615963",
+        "categories": [
+            {
+                "alias": "tea",
+                "title": "Tea Rooms"
+            },
+            {
+                "alias": "asianfusion",
+                "title": "Asian Fusion"
+            },
+            {
+                "alias": "szechuan",
+                "title": "Szechuan"
+            }
+        ],
+        "review_count": 634,
+        "coordinates": "{'latitude': 40.7293403, 'longitude': -73.9866071}",
+        "url": "https://www.yelp.com/biz/uluh-new-york?adjust_creative=xhk9hmMP8OeE6FaEbGhPVg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xhk9hmMP8OeE6FaEbGhPVg",
+        "insertedAtTimestamp": "02-24-2022, 16:34:15",
+        "img_url": "https://s3-media3.fl.yelpcdn.com/bphoto/JQfNL8nJukKJjSQ4lRYs-g/o.jpg",
+        "transactions": [
+            "pickup",
+            "delivery"
+        ],
+        "summary": "I love trying out new places, and this is the one I want to come back.\nSesame dumplings were my fav. \nFatty beef with flat noodles in sesame sauce was very... This store looks pretty plain from the outside, but when you walk in it's actually a really cool Chinese restaurant with a cool, modern aesthetic and chill... We came because of the good reviews and enticing Yelp pictures! \n\nWe ordered the following: \n\nPeking duck: this was good for the price. The duck skin was..."
+    },
+    {
+        "id": "R3UNnA8EbjhNWBHS0wJ0VA",
+        "cuisine": "Chinese",
+        "name": "Grand Sichuan Eastern",
+        "rating": 3.5,
+        "location": [
+            "1049 2nd Ave",
+            "New York, NY 10022"
+        ],
+        "zip_code": "10022",
+        "phone": "+12123555855",
+        "categories": [
+            {
+                "alias": "szechuan",
+                "title": "Szechuan"
+            }
+        ],
+        "review_count": 260,
+        "coordinates": "{'latitude': 40.75831, 'longitude': -73.96636}",
+        "url": "https://www.yelp.com/biz/grand-sichuan-eastern-new-york?adjust_creative=xhk9hmMP8OeE6FaEbGhPVg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xhk9hmMP8OeE6FaEbGhPVg",
+        "insertedAtTimestamp": "02-24-2022, 16:34:15",
+        "img_url": "https://s3-media1.fl.yelpcdn.com/bphoto/4yhGHgY-7IeIDxGAJVLRBQ/o.jpg",
+        "transactions": [
+            "pickup",
+            "delivery"
+        ],
+        "summary": "Great authentic old school Chinese food.  Friendly waiter,  quick and hot food.  Large variety of dishes. Lunch specials inexpensive and delicious. Very good Szechuan cuisine, with all the spice you can handle \nGreat for large parties especially for Chinese Nee Year! Wow!! Craving Szechuan food but don't have the energy to go all the way to flushing? This is the place for you. Our family came here super late on a..."
+    },
+    {
+        "id": "Qwd4Tv-CqgO2Yl9zZgkKOQ",
+        "cuisine": "Chinese",
+        "name": "Shun Lee Palace",
+        "rating": 3,
+        "location": [
+            "155 E 55th St",
+            "New York, NY 10022"
+        ],
+        "zip_code": "10022",
+        "phone": "+12123718844",
+        "categories": [
+            {
+                "alias": "chinese",
+                "title": "Chinese"
+            }
+        ],
+        "review_count": 309,
+        "coordinates": "{'latitude': 40.75945, 'longitude': -73.96907}",
+        "url": "https://www.yelp.com/biz/shun-lee-palace-new-york?adjust_creative=xhk9hmMP8OeE6FaEbGhPVg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xhk9hmMP8OeE6FaEbGhPVg",
+        "insertedAtTimestamp": "02-24-2022, 16:34:15",
+        "img_url": "https://s3-media1.fl.yelpcdn.com/bphoto/hV86XfsI0cfGi9dSMfB1jQ/o.jpg",
+        "transactions": [
+            "pickup",
+            "delivery"
+        ],
+        "summary": "Delivery during Virus.............has been terrific. Fast and Hot. We keep ordering the same thing. Shrimp Dumplings, Duck Egg Roll, Shrimp in Black Bean... Food was very good and takeout did not take to long (~30 min) . Loved the soup dumplings and moo shu pork. Will be returning I happen to stop by for lunch at this location we came in & had no problem being seated. \nOnce seated we got some sparkling water & stuck with the tea, not..."
+    },
+    {
+        "id": "3oB2_2vpeIyxJt1GvlcZBA",
+        "cuisine": "Chinese",
+        "name": "Baodega",
+        "rating": 4,
+        "location": [
+            "7 W 20th St",
+            "New York, NY 10011"
+        ],
+        "zip_code": "10011",
+        "phone": "+12124620007",
+        "categories": [
+            {
+                "alias": "shanghainese",
+                "title": "Shanghainese"
+            },
+            {
+                "alias": "dimsum",
+                "title": "Dim Sum"
+            },
+            {
+                "alias": "soup",
+                "title": "Soup"
+            }
+        ],
+        "review_count": 230,
+        "coordinates": "{'latitude': 40.74014, 'longitude': -73.99178}",
+        "url": "https://www.yelp.com/biz/baodega-new-york?adjust_creative=xhk9hmMP8OeE6FaEbGhPVg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xhk9hmMP8OeE6FaEbGhPVg",
+        "insertedAtTimestamp": "02-24-2022, 16:34:16",
+        "img_url": "https://s3-media4.fl.yelpcdn.com/bphoto/obYuCbmayKFOVyVscUGJ1Q/o.jpg",
+        "transactions": [
+            "restaurant_reservation",
+            "pickup",
+            "delivery"
+        ],
+        "summary": "I always think of this place as a hidden jewel because it never seems overly busy and the food is always spot on delicious with reasonable prices, the... Great spot for a variety of authentic Shanghainese dishes in a clean, open space. I came for dinner and tried 4 different dishes: 1. Roast pork bun ($7.50)-... Okay\n\nOn a cold day in NYC, soup dumpling sounded so good. Was looking forward to some yummy soup dumplings. \n\nWe wanted to try the fried and steamed (aka..."
+    },
+    {
+        "id": "0vg2Z-HPwkyVVX613j2ysg",
+        "cuisine": "Chinese",
+        "name": "Peng's Noodle Folk",
+        "rating": 4.5,
+        "location": [
+            "1659 1st Ave",
+            "New York, NY 10028"
+        ],
+        "zip_code": "10028",
+        "phone": "+19293913950",
+        "categories": [
+            {
+                "alias": "chinese",
+                "title": "Chinese"
+            },
+            {
+                "alias": "noodles",
+                "title": "Noodles"
+            },
+            {
+                "alias": "ramen",
+                "title": "Ramen"
+            }
+        ],
+        "review_count": 499,
+        "coordinates": "{'latitude': 40.77726, 'longitude': -73.94932}",
+        "url": "https://www.yelp.com/biz/pengs-noodle-folk-new-york-2?adjust_creative=xhk9hmMP8OeE6FaEbGhPVg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xhk9hmMP8OeE6FaEbGhPVg",
+        "insertedAtTimestamp": "02-24-2022, 16:34:16",
+        "img_url": "https://s3-media3.fl.yelpcdn.com/bphoto/wvHPziTEoK6D-_YclkYQuA/o.jpg",
+        "transactions": [
+            "pickup",
+            "delivery"
+        ],
+        "summary": "First off... this might be my new fave place. It has such a cute vibe and atmosphere, the service was great from the beginning. \n\nIt can hold large parties... We ended up at Peng's when the restaurant we intended to go to was closed and I'm so happy we did! It doesn't look like much from the outside but I entirely... Genuinely wonderful atmosphere, food and customer service food. Wonder strongly recommend if you want food that is cozy and delicious \n\nI take all my..."
+    },
+    {
+        "id": "wDuf4Qz9qsC62amLZgWNJQ",
+        "cuisine": "Chinese",
+        "name": "Little Alley",
+        "rating": 4,
+        "location": [
+            "550 3rd Ave",
+            "New York, NY 10016"
+        ],
+        "zip_code": "10016",
+        "phone": "+16469983976",
+        "categories": [
+            {
+                "alias": "shanghainese",
+                "title": "Shanghainese"
+            }
+        ],
+        "review_count": 423,
+        "coordinates": "{'latitude': 40.74744, 'longitude': -73.97728}",
+        "url": "https://www.yelp.com/biz/little-alley-new-york?adjust_creative=xhk9hmMP8OeE6FaEbGhPVg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xhk9hmMP8OeE6FaEbGhPVg",
+        "insertedAtTimestamp": "02-24-2022, 16:34:16",
+        "img_url": "https://s3-media2.fl.yelpcdn.com/bphoto/bWwmSkxmIKpHudA9lyuniw/o.jpg",
+        "transactions": [
+            "pickup",
+            "delivery"
+        ],
+        "summary": "Came here for lunch on a weekend and was seated right away. They served us cold waters right away. I ordered jasmine tea bc I feel like drinking hot tea is... We did walk in on a Friday evening with a group of 6 around 8! The place was pretty full, it seems we got the last available table. \n\nAs per other reviews,... Ordered delivery and arrived well-packaged with none of the soup from the snow pea shoots spilt. Chose this place mostly for the cholesterol carbs aka..."
+    },
+    {
+        "id": "mUl0wtO7tPkBocuJqZ-7Dw",
+        "cuisine": "Chinese",
+        "name": "Dun Huang -  Grand Central",
+        "rating": 4.5,
+        "location": [
+            "320 Lexington Ave",
+            "New York, NY 10016"
+        ],
+        "zip_code": "10016",
+        "phone": "+16469644007",
+        "categories": [
+            {
+                "alias": "chinese",
+                "title": "Chinese"
+            },
+            {
+                "alias": "noodles",
+                "title": "Noodles"
+            }
+        ],
+        "review_count": 235,
+        "coordinates": "{'latitude': 40.74922, 'longitude': -73.97785}",
+        "url": "https://www.yelp.com/biz/dun-huang-grand-central-new-york-4?adjust_creative=xhk9hmMP8OeE6FaEbGhPVg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xhk9hmMP8OeE6FaEbGhPVg",
+        "insertedAtTimestamp": "02-24-2022, 16:34:16",
+        "img_url": "https://s3-media3.fl.yelpcdn.com/bphoto/wkO2gyW-6no-16mIEjWX3A/o.jpg",
+        "transactions": [
+            "pickup",
+            "delivery"
+        ],
+        "summary": "Overall: great authentic food at an affordable price and in a good location. Service was great and fast.\n\nStopped in for a quick dinner on a cold day and... Ordered the lanzhou beef with wide noodles and tbh It wasn't anything great. Not sure if it is because I had higher expectations that it was going to be... Come here to get your beef noodle soup fix! \n\nPro Tip: Check in via Yelp to get the free eggplant appetizer! \n\nFood: Great value for the price! \n\n- Eggplant..."
+    },
+    {
+        "id": "pCfGgX0WxGASGM4-Yhr2Pw",
+        "cuisine": "Chinese",
+        "name": "Hao Noodle Chelsea",
+        "rating": 4.5,
+        "location": [
+            "343 W 14th St",
+            "New York, NY 10014"
+        ],
+        "zip_code": "10014",
+        "phone": "+16468820059",
+        "categories": [
+            {
+                "alias": "chinese",
+                "title": "Chinese"
+            },
+            {
+                "alias": "bbq",
+                "title": "Barbeque"
+            },
+            {
+                "alias": "noodles",
+                "title": "Noodles"
+            }
+        ],
+        "review_count": 481,
+        "coordinates": "{'latitude': 40.7406999, 'longitude': -74.00436}",
+        "url": "https://www.yelp.com/biz/hao-noodle-chelsea-new-york-7?adjust_creative=xhk9hmMP8OeE6FaEbGhPVg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xhk9hmMP8OeE6FaEbGhPVg",
+        "insertedAtTimestamp": "02-24-2022, 16:34:17",
+        "img_url": "https://s3-media2.fl.yelpcdn.com/bphoto/WbBI5Kd8FAegVcV1g-BkyQ/o.jpg",
+        "transactions": [
+            "pickup",
+            "delivery"
+        ],
+        "summary": "Love this place! Deff one of my faves and I do NOT understand why they aren't more crowded. That does usually mean that I can get a table last minute... TL;DR Great spot for some delicious lunch but fair warning the spice level indicator is no joke people, choose your dish accordingly.  \n\nI had the Dan Dan... Hao Noodle really hits on both ambiance and food in a great location right next to the meatpacking district. It's certainly not your cheap Chinese..."
+    },
+    {
+        "id": "wfhMIiMh2A2psCGONOVSlg",
+        "cuisine": "Chinese",
+        "name": "Han Dynasty",
+        "rating": 4,
+        "location": [
+            "90 3rd Ave",
+            "New York, NY 10003"
+        ],
+        "zip_code": "10003",
+        "phone": "+12123908685",
+        "categories": [
+            {
+                "alias": "szechuan",
+                "title": "Szechuan"
+            },
+            {
+                "alias": "noodles",
+                "title": "Noodles"
+            },
+            {
+                "alias": "beerbar",
+                "title": "Beer Bar"
+            }
+        ],
+        "review_count": 1296,
+        "coordinates": "{'latitude': 40.732072, 'longitude': -73.988074}",
+        "url": "https://www.yelp.com/biz/han-dynasty-new-york?adjust_creative=xhk9hmMP8OeE6FaEbGhPVg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xhk9hmMP8OeE6FaEbGhPVg",
+        "insertedAtTimestamp": "02-24-2022, 16:34:17",
+        "img_url": "https://s3-media3.fl.yelpcdn.com/bphoto/G5jm9G3m_tquqwDm_qHoVQ/o.jpg",
+        "transactions": [
+            "pickup",
+            "delivery"
+        ],
+        "summary": ""
+    },
+    {
+        "id": "scTDvJ2M2jDbb1ntVeIyxA",
+        "cuisine": "Chinese",
+        "name": "Hao Noodle - West Village",
+        "rating": 4,
+        "location": [
+            "401 6th Ave",
+            "New York, NY 10014"
+        ],
+        "zip_code": "10014",
+        "phone": "+12126338900",
+        "categories": [
+            {
+                "alias": "chinese",
+                "title": "Chinese"
+            },
+            {
+                "alias": "noodles",
+                "title": "Noodles"
+            }
+        ],
+        "review_count": 790,
+        "coordinates": "{'latitude': 40.7334863190479, 'longitude': -73.9998929006093}",
+        "url": "https://www.yelp.com/biz/hao-noodle-west-village-new-york-3?adjust_creative=xhk9hmMP8OeE6FaEbGhPVg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xhk9hmMP8OeE6FaEbGhPVg",
+        "insertedAtTimestamp": "02-24-2022, 16:34:17",
+        "img_url": "https://s3-media4.fl.yelpcdn.com/bphoto/X-hE8s5vsTYtJ-w2k7p86w/o.jpg",
+        "transactions": [
+            "pickup",
+            "delivery"
+        ],
+        "summary": "My god was this place amazing!\n\nThe atmosphere is beautiful - a modern, clean feel, with a cozy touch. Long curtains lead the way from the entrance to two... I really didn't want to like this place... it's so posh and expensive, I thought it couldn't possibly have authentic Chinese food. But man oh man is it good... Hao good are these noodles? Really good! Alright that's enough jokes. I am so sorry.\nWe got the rice and bacon siu mai. You already know those were flame. I..."
+    },
+    {
+        "id": "SNhDVaf_n7VDZcfry8mYdA",
+        "cuisine": "Chinese",
+        "name": "The Bao",
+        "rating": 4,
+        "location": [
+            "13 St Marks Pl",
+            "New York, NY 10003"
+        ],
+        "zip_code": "10003",
+        "phone": "+12123889238",
+        "categories": [
+            {
+                "alias": "shanghainese",
+                "title": "Shanghainese"
+            },
+            {
+                "alias": "dimsum",
+                "title": "Dim Sum"
+            },
+            {
+                "alias": "seafood",
+                "title": "Seafood"
+            }
+        ],
+        "review_count": 1316,
+        "coordinates": "{'latitude': 40.72939, 'longitude': -73.9889199}",
+        "url": "https://www.yelp.com/biz/the-bao-new-york?adjust_creative=xhk9hmMP8OeE6FaEbGhPVg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xhk9hmMP8OeE6FaEbGhPVg",
+        "insertedAtTimestamp": "02-24-2022, 16:34:17",
+        "img_url": "https://s3-media1.fl.yelpcdn.com/bphoto/mxfoOB6li2czAr87PhH3aQ/o.jpg",
+        "transactions": [
+            "pickup",
+            "delivery"
+        ],
+        "summary": "My boyfriend and I came here on a Friday night for some soup dumpling cravings. It was cramped when we first entered and very busy but we were told our wait... The food here had totally changed since they open. There's a lot of other place with better soup dumplings. \nHowever the wait staffs were very nice. They... One of the best Chinese restaurants I've tried.\nEverything we ordered was super fresh and tasted so good.\nIt was super packed and busy but yet service was..."
+    },
+    {
+        "id": "X4hEgOBOLTYFhlWO-gAFxQ",
+        "cuisine": "Chinese",
+        "name": "Tipsy Shanghai",
+        "rating": 4,
+        "location": [
+            "228 Thompson St",
+            "New York, NY 10012"
+        ],
+        "zip_code": "10012",
+        "phone": "+12127630877",
+        "categories": [
+            {
+                "alias": "shanghainese",
+                "title": "Shanghainese"
+            }
+        ],
+        "review_count": 286,
+        "coordinates": "{'latitude': 40.72929, 'longitude': -73.99882}",
+        "url": "https://www.yelp.com/biz/tipsy-shanghai-new-york-2?adjust_creative=xhk9hmMP8OeE6FaEbGhPVg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xhk9hmMP8OeE6FaEbGhPVg",
+        "insertedAtTimestamp": "02-24-2022, 16:34:18",
+        "img_url": "https://s3-media4.fl.yelpcdn.com/bphoto/VdE-7DtARDbhplOxLO6ftw/o.jpg",
+        "transactions": [
+            "pickup",
+            "delivery"
+        ],
+        "summary": "Best Asian food I've had in years! I had the general tso chicken, and their soup dumplings. Great service as well. Simple Chinese food. Good noodles, fast service, what's not to like? Would recommend others here. The dishes were solid, but not amazing. The portions were quite small. The meal came out to be $40 per person.\n\nWuxi Pork Ribs\nI loved it, and but dish was..."
+    },
+    {
+        "id": "62Kedrco374IuZ_OFb0BxA",
+        "cuisine": "Chinese",
+        "name": "3 Times",
+        "rating": 4,
+        "location": [
+            "818 Broadway",
+            "New York, NY 10003"
+        ],
+        "zip_code": "10003",
+        "phone": "+16466093040",
+        "categories": [
+            {
+                "alias": "dimsum",
+                "title": "Dim Sum"
+            },
+            {
+                "alias": "shanghainese",
+                "title": "Shanghainese"
+            },
+            {
+                "alias": "noodles",
+                "title": "Noodles"
+            }
+        ],
+        "review_count": 187,
+        "coordinates": "{'latitude': 40.73285, 'longitude': -73.99104}",
+        "url": "https://www.yelp.com/biz/3-times-new-york-6?adjust_creative=xhk9hmMP8OeE6FaEbGhPVg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xhk9hmMP8OeE6FaEbGhPVg",
+        "insertedAtTimestamp": "02-24-2022, 16:34:18",
+        "img_url": "https://s3-media1.fl.yelpcdn.com/bphoto/I-kKW1dlEk444vgCEhTPTQ/o.jpg",
+        "transactions": [
+            "restaurant_reservation",
+            "pickup",
+            "delivery"
+        ],
+        "summary": "Picture this... cold winter day... braised beef soup... fried rice cakes with beef... and the beef tripe.\n\nGreat service as always. Restaurant is very clean... I was at this place a month ago. They follow Covid protocols properly as expected for most places in the area. The service was fine; polite in prompt; and... Initially felt that these 5-star raving reviews and extraordinary comments were too good to be true.  In all honesty, the area may be great but this..."
+    },
+    {
+        "id": "6YehBdKHcLDsvaewhcEjFQ",
+        "cuisine": "Chinese",
+        "name": "Hey Yuet",
+        "rating": 5,
+        "location": [
+            "251 W 26th St",
+            "New York, NY 10001"
+        ],
+        "zip_code": "10001",
+        "phone": "+16469984196",
+        "categories": [
+            {
+                "alias": "dimsum",
+                "title": "Dim Sum"
+            },
+            {
+                "alias": "cantonese",
+                "title": "Cantonese"
+            }
+        ],
+        "review_count": 51,
+        "coordinates": "{'latitude': 40.74703, 'longitude': -73.99645}",
+        "url": "https://www.yelp.com/biz/hey-yuet-new-york?adjust_creative=xhk9hmMP8OeE6FaEbGhPVg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xhk9hmMP8OeE6FaEbGhPVg",
+        "insertedAtTimestamp": "02-24-2022, 16:34:18",
+        "img_url": "https://s3-media2.fl.yelpcdn.com/bphoto/FothCN3qVm7p4YXR1jlTGA/o.jpg",
+        "transactions": [
+            "restaurant_reservation",
+            "pickup",
+            "delivery"
+        ],
+        "summary": "Great experience at Hey Yuet in Chelsea. Authentic dim sum experience with some modern twists. Our favorites were probably the cheesy pineapple bun and... Heyyuet serves dimsum and cantonese cuisine in the Chelsea area. I was very impressed by how spacious the restaurant is and how far the tables are far from... Calibrate your expectations accordingly and this can definitely be a 4-star experience.\n\nThose expectations: A mid-range uptown dim sum-focused restaurant..."
+    },
+    {
+        "id": "Bb0h5Rs8ugSM2CjulRhfBw",
+        "cuisine": "Chinese",
+        "name": "Spicy Moon East Village",
+        "rating": 4.5,
+        "location": [
+            "328 E 6th St",
+            "New York, NY 10003"
+        ],
+        "zip_code": "10003",
+        "phone": "+16464298471",
+        "categories": [
+            {
+                "alias": "szechuan",
+                "title": "Szechuan"
+            },
+            {
+                "alias": "vegan",
+                "title": "Vegan"
+            }
+        ],
+        "review_count": 497,
+        "coordinates": "{'latitude': 40.72674, 'longitude': -73.98722}",
+        "url": "https://www.yelp.com/biz/spicy-moon-east-village-new-york?adjust_creative=xhk9hmMP8OeE6FaEbGhPVg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xhk9hmMP8OeE6FaEbGhPVg",
+        "insertedAtTimestamp": "02-24-2022, 16:34:18",
+        "img_url": "https://s3-media2.fl.yelpcdn.com/bphoto/BNxPGEKGydefcGPyg_Z68g/o.jpg",
+        "transactions": [
+            "restaurant_reservation",
+            "pickup",
+            "delivery"
+        ],
+        "summary": "One of my favorite spots in the city! I'm not a big fan of \"fake meats\" but this place just elevated regular vegetarian options and it was fantastic! Some... Wow I wish I can give this place 10 stars! Best Vegan food I've ever had in the East Coast. I went with my best friend (East village gal) and she said this... How am I only just finding out about this absolute gem? Sure we were in a global pandemic with a virus that did a number on our taste buds but still! I'm..."
+    },
+    {
+        "id": "oe8GEFE4QLFAKt87y7zcgA",
+        "cuisine": "Chinese",
+        "name": "Very Fresh Noodles",
+        "rating": 4.5,
+        "location": [
+            "409 W 15th St",
+            "New York, NY 10011"
+        ],
+        "zip_code": "10011",
+        "phone": "+13322156161",
+        "categories": [
+            {
+                "alias": "taiwanese",
+                "title": "Taiwanese"
+            },
+            {
+                "alias": "chinese",
+                "title": "Chinese"
+            },
+            {
+                "alias": "noodles",
+                "title": "Noodles"
+            }
+        ],
+        "review_count": 1157,
+        "coordinates": "{'latitude': 40.74207, 'longitude': -74.00565}",
+        "url": "https://www.yelp.com/biz/very-fresh-noodles-new-york?adjust_creative=xhk9hmMP8OeE6FaEbGhPVg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xhk9hmMP8OeE6FaEbGhPVg",
+        "insertedAtTimestamp": "02-24-2022, 16:34:18",
+        "img_url": "https://s3-media2.fl.yelpcdn.com/bphoto/gRqfWsSDep7gFKGE4lChBQ/o.jpg",
+        "transactions": [
+            "pickup",
+            "delivery"
+        ],
+        "summary": "I've had this place on my bookmarks for a very long time now. As a big fan of hand pulled noodles. This place knocks it out of the park. If you like a... I will preface this by saying that I am not a fan of Taiwanese beef noodle soup. I've always found the broth to be lacking *something* even though I'd never... What else can I say that it's not already spoken! I am so happy to have tried this shop last weekend in another trip visiting the Big Apple City.\n\nThe shop..."
+    },
+    {
+        "id": "A-ert0jDRBfku9ogyW_mEg",
+        "cuisine": "Chinese",
+        "name": "Spice Symphony",
+        "rating": 4.5,
+        "location": [
+            "150 E 50th St",
+            "New York, NY 10022"
+        ],
+        "zip_code": "10022",
+        "phone": "+12123004869",
+        "categories": [
+            {
+                "alias": "chinese",
+                "title": "Chinese"
+            },
+            {
+                "alias": "indpak",
+                "title": "Indian"
+            },
+            {
+                "alias": "cocktailbars",
+                "title": "Cocktail Bars"
+            }
+        ],
+        "review_count": 560,
+        "coordinates": "{'latitude': 40.7558937072754, 'longitude': -73.9715347290039}",
+        "url": "https://www.yelp.com/biz/spice-symphony-new-york-3?adjust_creative=xhk9hmMP8OeE6FaEbGhPVg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xhk9hmMP8OeE6FaEbGhPVg",
+        "insertedAtTimestamp": "02-24-2022, 16:34:19",
+        "img_url": "https://s3-media1.fl.yelpcdn.com/bphoto/ooBprHe-wyNb1dwvd1qhOA/o.jpg",
+        "transactions": [
+            "pickup",
+            "delivery"
+        ],
+        "summary": "This 5 star review....is for the Dhaniwal Korma....FEED ME MORE....\n\nJust...don't eat outside...the kids next to me loved the goofy garbage elevator that... Delicious Indo-Chinese food but extremely overpriced and tiny portions! I get that it's Midtown but it's outrageous for them to charge how much they are... Delicious Indian fusion restaurant in the heart of midtown east. You can't go wrong with any of their menu options. There's vegetarian and non-vegetarian..."
+    },
+    {
+        "id": "sfsjk1h50ooC2ioY7m48gw",
+        "cuisine": "Chinese",
+        "name": "Pig Heaven",
+        "rating": 4,
+        "location": [
+            "1420 3rd Ave",
+            "New York, NY 10028"
+        ],
+        "zip_code": "10028",
+        "phone": "+12127444333",
+        "categories": [
+            {
+                "alias": "bbq",
+                "title": "Barbeque"
+            },
+            {
+                "alias": "szechuan",
+                "title": "Szechuan"
+            },
+            {
+                "alias": "dimsum",
+                "title": "Dim Sum"
+            }
+        ],
+        "review_count": 447,
+        "coordinates": "{'latitude': 40.77544, 'longitude': -73.95686}",
+        "url": "https://www.yelp.com/biz/pig-heaven-new-york-3?adjust_creative=xhk9hmMP8OeE6FaEbGhPVg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xhk9hmMP8OeE6FaEbGhPVg",
+        "insertedAtTimestamp": "02-24-2022, 16:34:19",
+        "img_url": "https://s3-media2.fl.yelpcdn.com/bphoto/YzHJPPxM5m6qp_vwfrC6SA/o.jpg",
+        "transactions": [
+            "pickup",
+            "delivery"
+        ],
+        "summary": "I think this is our new go-to Chinese restaurant in our neighborhood! Definitely recommend the soup dumplings and shumai dim sum options. Their bbq spare... Absolutely loved this place! we came here on a whim while biking around Central Park and nothing disappointed. Egg drop soup was light yet savory and... My last review from 5 years ago still stands. The best ribs come from Pig Heaven... but they do a lot of other dishes well, too. Whether you're in the mood..."
+    },
+    {
+        "id": "xm_-5QZFzJidiUO--PgOYg",
+        "cuisine": "Chinese",
+        "name": "Bites of Xi'an",
+        "rating": 4.5,
+        "location": [
+            "60 W 56th St",
+            "New York, NY 10019"
+        ],
+        "zip_code": "10019",
+        "phone": "+16464490771",
+        "categories": [
+            {
+                "alias": "chinese",
+                "title": "Chinese"
+            },
+            {
+                "alias": "noodles",
+                "title": "Noodles"
+            }
+        ],
+        "review_count": 35,
+        "coordinates": "{'latitude': 40.76335868622376, 'longitude': -73.97709537292124}",
+        "url": "https://www.yelp.com/biz/bites-of-xian-new-york-2?adjust_creative=xhk9hmMP8OeE6FaEbGhPVg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xhk9hmMP8OeE6FaEbGhPVg",
+        "insertedAtTimestamp": "02-24-2022, 16:34:19",
+        "img_url": "https://s3-media4.fl.yelpcdn.com/bphoto/6OheZ6oBw-p_Hs87RgTQdA/o.jpg",
+        "transactions": [
+            "pickup",
+            "delivery"
+        ],
+        "summary": "Authentic northwest Chinese food restaurant. Very friendly staffs, great food and good price. \nSpicy chicken is juicy and just right spicy.\nI took out three... Sad to give a low review since the people working here are super nice and friendly. \n\n1) the Liang Pi (cold skin noodles) are just wrong. It's a dish that... The skin noodle is absolutely rubbish. The noodles are of the wrong texture, length is off and sauce is a bit slimy. This is extremely not good. \n\nAlso..."
+    },
+    {
+        "id": "R26zweQ8-xoZS7iHkXQOvw",
+        "cuisine": "Chinese",
+        "name": "Shanghai 21",
+        "rating": 4,
+        "location": [
+            "21 Mott St",
+            "New York, NY 10013"
+        ],
+        "zip_code": "10013",
+        "phone": "+12127666311",
+        "categories": [
+            {
+                "alias": "shanghainese",
+                "title": "Shanghainese"
+            }
+        ],
+        "review_count": 1815,
+        "coordinates": "{'latitude': 40.71441, 'longitude': -73.99902}",
+        "url": "https://www.yelp.com/biz/shanghai-21-new-york-2?adjust_creative=xhk9hmMP8OeE6FaEbGhPVg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xhk9hmMP8OeE6FaEbGhPVg",
+        "insertedAtTimestamp": "02-24-2022, 16:34:19",
+        "img_url": "https://s3-media3.fl.yelpcdn.com/bphoto/1rNQzY87fKHPOEexZIGHGg/o.jpg",
+        "transactions": [
+            "pickup",
+            "delivery"
+        ],
+        "summary": "I only came here for the soup dumplings so anything else, I can't really comment on, BUT the soup dumplings are so worth it and I will be back just for... Favorite dim sum in Chinatown! This visit we got the Soup Dumplings with Pork and Szechuan Style Wontons (with shrimp), but the waiter misunderstood and got... Shanghai 21 was on a friend's list as highly recommended so we decided to give it a go. We went for \"soup dumplings\" I have never heard of this before but I..."
+    },
+    {
+        "id": "Qgv2vyUV-DwK8YwrhU-jtw",
+        "cuisine": "Chinese",
+        "name": "Lan Sheng Restaurant",
+        "rating": 4,
+        "location": [
+            "128 W 36th St",
+            "New York, NY 10018"
+        ],
+        "zip_code": "10018",
+        "phone": "+12125758899",
+        "categories": [
+            {
+                "alias": "szechuan",
+                "title": "Szechuan"
+            }
+        ],
+        "review_count": 189,
+        "coordinates": "{'latitude': 40.7517141867087, 'longitude': -73.9883603449123}",
+        "url": "https://www.yelp.com/biz/lan-sheng-restaurant-new-york?adjust_creative=xhk9hmMP8OeE6FaEbGhPVg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xhk9hmMP8OeE6FaEbGhPVg",
+        "insertedAtTimestamp": "02-24-2022, 16:34:19",
+        "img_url": "https://s3-media3.fl.yelpcdn.com/bphoto/EhcaQ3bmOpV4ZvHfQxKntg/o.jpg",
+        "transactions": [
+            "restaurant_reservation",
+            "pickup",
+            "delivery"
+        ],
+        "summary": "Possibly one of my fav spot to relax at after work. Staff is courteous and whole vibe is just clean/comfortable and spacious. \n\nI've been here a few times... Food is authentic and delicious.  Portion is big.\n\nService is ok, but the restaurant might be under staff, as it takes some time for waiters to serve the table. I must ditto what another reviewer said about this restaurant. This is a great choice if you want good, solid Chinese (Szechuan) without having to go to..."
+    },
+    {
+        "id": "1dFOF1HPaThSCsdiqR7DrA",
+        "cuisine": "Chinese",
+        "name": "Land of Plenty",
+        "rating": 3.5,
+        "location": [
+            "204E 58th St",
+            "New York, NY 10022"
+        ],
+        "zip_code": "10022",
+        "phone": "+12123088788",
+        "categories": [
+            {
+                "alias": "chinese",
+                "title": "Chinese"
+            }
+        ],
+        "review_count": 345,
+        "coordinates": "{'latitude': 40.76063, 'longitude': -73.96664}",
+        "url": "https://www.yelp.com/biz/land-of-plenty-new-york?adjust_creative=xhk9hmMP8OeE6FaEbGhPVg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xhk9hmMP8OeE6FaEbGhPVg",
+        "insertedAtTimestamp": "02-24-2022, 16:34:20",
+        "img_url": "https://s3-media4.fl.yelpcdn.com/bphoto/ttaMT1Mofc2w4Tq_XFv08A/o.jpg",
+        "transactions": [
+            "pickup",
+            "delivery"
+        ],
+        "summary": "We did takeout for our anniversary dinner tonight, and it was good !\n\nThe menu is a bit limited, especially for my husband, because it's pork-heavy and a... NYC must have thousands of Chinese restaurant. You just have to walk anywhere in Manhattan & one will always be there to try. No need to make a special trip... Stumbled upon an amazing Szechuan Chinese food in Midtown East area. I wasn't quite sure what to expect with there being so many Chinese places near by but..."
+    },
+    {
+        "id": "Kqb7MjTPNkjPMoFRd-rWpw",
+        "cuisine": "Chinese",
+        "name": "MáLà Project",
+        "rating": 4,
+        "location": [
+            "122 1st Ave",
+            "New York, NY 10009"
+        ],
+        "zip_code": "10009",
+        "phone": "+12123538880",
+        "categories": [
+            {
+                "alias": "szechuan",
+                "title": "Szechuan"
+            },
+            {
+                "alias": "hotpot",
+                "title": "Hot Pot"
+            }
+        ],
+        "review_count": 775,
+        "coordinates": "{'latitude': 40.72713, 'longitude': -73.98542}",
+        "url": "https://www.yelp.com/biz/m%C3%A1l%C3%A0-project-new-york?adjust_creative=xhk9hmMP8OeE6FaEbGhPVg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xhk9hmMP8OeE6FaEbGhPVg",
+        "insertedAtTimestamp": "02-24-2022, 16:34:20",
+        "img_url": "https://s3-media2.fl.yelpcdn.com/bphoto/LTMWMDPLX1OV7j4vgCOvHg/o.jpg",
+        "transactions": [
+            "pickup",
+            "delivery"
+        ],
+        "summary": "So. I moved to NYC. And I may or may not have moved for Mala project. \n\nAnyway, it's just as good as I remembered and I'm SO excited to be a few subway... It is a foolish blunder to not make reservations when you plan on dining during peak dinner hours on a Saturday. Although the East Village offers an endless... I admit my spice tolerance is not impressive to say the least. I also am not too familiar with MaLa food. So why did I come here? Well, a Taiwanese friend..."
+    },
+    {
+        "id": "l44CFBTejwL0ElKmkH7xQQ",
+        "cuisine": "Chinese",
+        "name": "Decoy",
+        "rating": 4,
+        "location": [
+            "529 Hudson St",
+            "New York, NY 10014"
+        ],
+        "zip_code": "10014",
+        "phone": "+12126919700",
+        "categories": [
+            {
+                "alias": "chinese",
+                "title": "Chinese"
+            },
+            {
+                "alias": "bars",
+                "title": "Bars"
+            }
+        ],
+        "review_count": 439,
+        "coordinates": "{'latitude': 40.734207418277244, 'longitude': -74.006519}",
+        "url": "https://www.yelp.com/biz/decoy-new-york?adjust_creative=xhk9hmMP8OeE6FaEbGhPVg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xhk9hmMP8OeE6FaEbGhPVg",
+        "insertedAtTimestamp": "02-24-2022, 16:34:20",
+        "img_url": "https://s3-media3.fl.yelpcdn.com/bphoto/dltLseFD7I-2fYdwWSH5eg/o.jpg",
+        "transactions": [],
+        "summary": "Sarah is the best waitress I've had in a long time and she deserves a raise.... HANDS DOWN. Not only was her service game on point, but her door-shutting... Came here after hearing good things about their Peking duck. If you want to try their Peking duck, you need to call ahead and ask to reserve one with your... The Peking duck is truly excellent and is on par with that of some of the best restaurants in Beijing. The meat is tender and lightly salty while the skin..."
+    },
+    {
+        "id": "TzhAlljC_843JO7UDDUIaQ",
+        "cuisine": "Chinese",
+        "name": "The Tang - Upper West Side",
+        "rating": 4.5,
+        "location": [
+            "920 Amsterdam Ave",
+            "New York, NY 10025"
+        ],
+        "zip_code": "10025",
+        "phone": "+16465967970",
+        "categories": [
+            {
+                "alias": "noodles",
+                "title": "Noodles"
+            },
+            {
+                "alias": "szechuan",
+                "title": "Szechuan"
+            },
+            {
+                "alias": "dimsum",
+                "title": "Dim Sum"
+            }
+        ],
+        "review_count": 248,
+        "coordinates": "{'latitude': 40.80006, 'longitude': -73.96639}",
+        "url": "https://www.yelp.com/biz/the-tang-upper-west-side-new-york?adjust_creative=xhk9hmMP8OeE6FaEbGhPVg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xhk9hmMP8OeE6FaEbGhPVg",
+        "insertedAtTimestamp": "02-24-2022, 16:34:20",
+        "img_url": "https://s3-media2.fl.yelpcdn.com/bphoto/e1b-BU1Dz6rXbmMg5D1sFA/o.jpg",
+        "transactions": [
+            "pickup",
+            "delivery"
+        ],
+        "summary": "Hen hao!  My friend chose The Tang from a list of choices for dinner.  She liked the headline that it was best for noodles.  Funny story is that her... First, when we walked in, we'd like a four table seat since the seat is not really comfortable to sit, we'd like to sit on the couch, the waiter said it is... Really solid spot! Quite easy to get a Saturday night reservation, which is always a plus. The restaurant was actually quite quiet, definitely available for..."
+    },
+    {
+        "id": "M-odQWSEfsR2mVEw7nKG-g",
+        "cuisine": "Chinese",
+        "name": "Nyonya",
+        "rating": 4,
+        "location": [
+            "199 Grand St",
+            "New York, NY 10013"
+        ],
+        "zip_code": "10013",
+        "phone": "+12123343669",
+        "categories": [
+            {
+                "alias": "malaysian",
+                "title": "Malaysian"
+            },
+            {
+                "alias": "chinese",
+                "title": "Chinese"
+            }
+        ],
+        "review_count": 2203,
+        "coordinates": "{'latitude': 40.7190148, 'longitude': -73.9968228}",
+        "url": "https://www.yelp.com/biz/nyonya-new-york?adjust_creative=xhk9hmMP8OeE6FaEbGhPVg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xhk9hmMP8OeE6FaEbGhPVg",
+        "insertedAtTimestamp": "02-24-2022, 16:34:21",
+        "img_url": "https://s3-media2.fl.yelpcdn.com/bphoto/YuWC1Gwo7ku4PvD-7mDQnA/o.jpg",
+        "transactions": [
+            "delivery"
+        ],
+        "summary": "Beef Rendang\n\nCan't tell if it's authentic, but it's definitely delicious. I really like spicy foods, so I liked it a lot. The beef is cooked very well,... This is The WORSE Malaysian Food I ever tasted in this country, and I live here for 30+ years.\nI give zero stars if there is an option here. (the worse... This was one of those silent meals because everything was so good and everyone was too busy stuffing their faces to speak.   I came here with a group of..."
+    },
+    {
+        "id": "xLJnT-pB4VECJzmUf1Whpg",
+        "cuisine": "Chinese",
+        "name": "3 Times",
+        "rating": 4.5,
+        "location": [
+            "90 Clinton St",
+            "New York, NY 10002"
+        ],
+        "zip_code": "10002",
+        "phone": "+16466096324",
+        "categories": [
+            {
+                "alias": "dimsum",
+                "title": "Dim Sum"
+            },
+            {
+                "alias": "shanghainese",
+                "title": "Shanghainese"
+            },
+            {
+                "alias": "noodles",
+                "title": "Noodles"
+            }
+        ],
+        "review_count": 171,
+        "coordinates": "{'latitude': 40.718271, 'longitude': -73.985209}",
+        "url": "https://www.yelp.com/biz/3-times-new-york-5?adjust_creative=xhk9hmMP8OeE6FaEbGhPVg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=xhk9hmMP8OeE6FaEbGhPVg",
+        "insertedAtTimestamp": "02-24-2022, 16:34:21",
+        "img_url": "https://s3-media2.fl.yelpcdn.com/bphoto/uBC9JN_S03qqWTCF_eNnwA/o.jpg",
+        "transactions": [
+            "restaurant_reservation",
+            "pickup",
+            "delivery"
+        ],
+        "summary": "- fabulous service\n- open late (1:30am)\n- no alcohol\n- gets very busy after 10:00 pm\n- rnb soundtrack \n- crispy duck is tasty and well made, but kind of... I was checking out places to eat for lunch on the entire Clinton Street and only found this and another worth going to. \n\nI found out this is closer to... Farabe and I came here for a quick lunch after a day of shopping and walking around. When we arrived there was no one at the front desk so, we had to wait a..."
+    }
+]
