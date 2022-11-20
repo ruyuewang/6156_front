@@ -1,0 +1,42 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.header .left, .right {
+    display: flex;
+    align-items: center;
+}
+
+.header .right {
+    margin-right: 10px;
+}
+
+.header .logo {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: gray;
+}
+
+.content {
+    padding: 50px;
+    background: #f0f2f5;
+}
+.ant-popover-inner{
+    border-radius: 5px!important;
+}
+.ant-popover-inner-content{
+    padding: 0!important;
+}
+
+.ant-list-header,.ant-spin-nested-loading .ant-list-item{
+    padding: 5px 12px;
+}
+.ant-spin-nested-loading .ant-list-item:hover{
+    background: #4094f8;
+    cursor: pointer;
+}

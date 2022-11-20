@@ -37,34 +37,3 @@
   }
 }
 
-
-/* Layout style */
-.layout {
-  height: 100%;
-}
-
-.logo {
-  width: 130px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: gray;
-}
-
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0;
-}
-
-.menu-left {
-  display:flex;
-  align-items: center;
-  width: 300px;
-}
-
-.menu-right {
-  display:flex;
-  align-items: center;
-}

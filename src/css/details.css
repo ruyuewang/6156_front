@@ -1,0 +1,33 @@
+.detail-row {
+    width: 100%;
+    padding: 20px;
+}
+
+.detail-row .img {
+    width: 100%;
+    /*height: 300px;*/
+}
+
+.detail-row .img img {
+    width: 100%;
+    height: 500px;
+    display: block;
+    /*margin-top: 50px;*/
+}
+
+.detail-description {
+    padding-left: 20px;
+}
+
+.detail-description .ant-descriptions-title {
+    font-size: 40px;
+}
+
+.detail-description .ant-descriptions-header {
+    margin: 0;
+    height: 40px;
+}
+
+.detail-description .ant-descriptions-item-label {
+    font-weight: bold;
+}

@@ -1,0 +1,11 @@
+.row {
+    /*margin-top: 4px;*/
+    width: 100%;
+    justify-content: center;
+}
+
+.row .ant-card {
+    width: 250px;
+    /*height: 200px;*/
+    background: #f7fff2;
+}
