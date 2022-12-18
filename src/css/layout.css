@@ -10,10 +10,6 @@
     align-items: center;
 }
 
-.header .right {
-    margin-right: 10px;
-}
-
 .header .logo {
     width: 150px;
     display: flex;
@@ -23,7 +19,7 @@
 }
 
 .content {
-    padding: 50px;
+    padding: 30px;
     background: #f0f2f5;
 }
 .ant-popover-inner{

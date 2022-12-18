@@ -3,30 +3,37 @@ import {Pagination, Row} from "antd";
 import List from "./List";
 import {useSelector} from "react-redux";
 import "../../css/lists.css"
-import result from "../data/result.json"
 import {selectCurrentSearch} from "../../store/searchSlice";
+import {useGetAllRestaurantsQuery, useGetRestaurantsMutation} from "../../api";
 
-function Lists({limit = 12}) {
+function Lists({limit = 12, offset= 0}) {
     const [current, setCurrent] = useState(1)
     const search = useSelector(selectCurrentSearch)
     const [data, setData] = useState([])
     const [total, setTotal] = useState(0)
-    useEffect(()=>{
+    // call api
+    const [getRestaurants]  = useGetRestaurantsMutation();
+    const {data: allRestaurantsData, isFetching} = useGetAllRestaurantsQuery();
+
+    useEffect(()=> {
         setCurrent(1)
-    },[search])
+    },[search]);
+
     useEffect(() => {
-        const skip = current - 1
-        const filterData = result.filter(item => {
-            return (new RegExp(search, "i")).test(item.name)
-        })
-        setTotal(filterData.length)
-        setData(filterData.slice(skip, skip + limit))
+        (async ()=> {
+            let result = (await getRestaurants({query:"c", offset: 0, limit: 12})).data
+            const filterData = result.filter(item => {
+                return (new RegExp(search, "i")).test(item.name)
+            });
+            setTotal(filterData.length);
+            setData(filterData);
+        })()
     }, [current, limit, search])
     const handleChange = (page) => {
         setCurrent(page)
     }
 
-    return (
+    return isFetching?"Loading" : (
         <div style={{
             display:"flex",
             flexDirection:"column",
@@ -35,14 +42,12 @@ function Lists({limit = 12}) {
         }}>
             <Row className="row">
                 {
-                    data.map(d => (<List key={d.id} {...d}/>))
+                    data.map(d => (<List key={d.rid} {...d}/>))
                 }
             </Row>
-            <Pagination current={current} total={total} pageSize={limit} onChange={handleChange}/>
+            <Pagination current={current} total={data.length} pageSize={limit} onChange={handleChange}/>
         </div>
     );
-
-
 }
 
 export default Lists;

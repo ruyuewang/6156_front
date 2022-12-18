@@ -50,32 +50,15 @@ const Register = () => {
                 style={{
                     width: 500,
                 }}
-                title="Register"
+                title="Sign Up"
                 extra={<Button onClick={handleLogin}>Login</Button>}
             >
                 <Form
                     {...formItemLayout}
                     form={form}
                     name="register"
-                    initialValues={{
-                        residence: ['zhejiang', 'hangzhou', 'xihu'],
-                        prefix: '86',
-                    }}
                     scrollToFirstError
                 >
-                    <Form.Item
-                        name="username"
-                        label="Name"
-                        rules={[
-                            {
-                                required: true,
-                                message: 'Please input your name!',
-                                whitespace: true,
-                            },
-                        ]}
-                    >
-                        <Input/>
-                    </Form.Item>
                     <Form.Item
                         name="email"
                         label="E-mail"
@@ -86,55 +69,69 @@ const Register = () => {
                             },
                             {
                                 required: true,
-                                message: 'Please input your E-mail!',
+                                message: 'Please enter your E-mail',
                             },
                         ]}
                     >
-                        <Input/>
+                        <Input placeholder="E-mail must be gmail"/>
                     </Form.Item>
-
                     <Form.Item
-                        name="password"
-                        label="Password"
+                        name="username"
+                        label="Username"
                         rules={[
                             {
                                 required: true,
-                                message: 'Please input your password!',
+                                message: 'Please enter your user name',
+                                whitespace: true,
                             },
                         ]}
-                        hasFeedback
                     >
-                        <Input.Password/>
+                        <Input placeholder="Please input the user name"/>
                     </Form.Item>
-
                     <Form.Item
-                        name="confirm"
-                        label="Confirm Password"
-                        dependencies={['password']}
-                        hasFeedback
+                        name="firstname"
+                        label="First Name"
                         rules={[
                             {
                                 required: true,
-                                message: 'Please confirm your password!',
+                                message: 'Please enter your first name',
+                                whitespace: true,
                             },
-                            ({getFieldValue}) => ({
-                                validator(_, value) {
-                                    if (!value || getFieldValue('password') === value) {
-                                        return Promise.resolve();
-                                    }
-
-                                    return Promise.reject(new Error('The two passwords that you entered do not match!'));
-                                },
-                            }),
                         ]}
                     >
-                        <Input.Password/>
+                        <Input placeholder="Please input your first name"/>
                     </Form.Item>
+                    <Form.Item
+                        name="middlename"
+                        label="Middle Name"
+                        rules={[
+                            {
+                                required: false,
+                                message: 'Please enter your middle name',
+                                whitespace: true,
+                            },
+                        ]}
+                    >
+                        <Input />
+                    </Form.Item>
+                    <Form.Item
+                        name="lastname"
+                        label="Last Name"
+                        rules={[
+                            {
+                                required: true,
+                                message: 'Please enter your last name',
+                                whitespace: true,
+                            },
+                        ]}
+                    >
+                        <Input placeholder="Please input your last name"/>
+                    </Form.Item>
+
                     <Form.Item {...tailFormItemLayout}>
                         <Button type="primary" htmlType="submit">
                             Register
                         </Button>
-                        Or <a href="#/login">login now!</a>
                     </Form.Item>
                 </Form>
             </Card>

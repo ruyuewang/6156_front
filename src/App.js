@@ -15,7 +15,7 @@ function App() {
         <Route element={<MyLayout/>}>
           <Route path="/" element={<Home/>}/>
           <Route path="/details">
-            <Route path=":id" element={<Details/>}/>
+            <Route path=":rid" element={<Details/>}/>
           </Route>
           <Route path="/user" element={<Profile/>}/>
         </Route>

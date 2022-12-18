@@ -2,16 +2,22 @@ import {Button, Card, Form, Input} from 'antd';
 import React from 'react';
 import "../../css/login.css"
 import {useNavigate} from "react-router-dom";
+import {useLoginMutation} from "../../api";
 
 const Login = () => {
-    const navigate = useNavigate()
+    const navigate = useNavigate();
     const handleSignup = () => {
-        navigate("/register")
+        navigate("/register");
 
     }
-    const handleLogin = ()=>{
-        navigate("/")
+    // call api
+    const [userLogin,{isLoading,isFetching,error}] = useLoginMutation();
+
+    const handleLogin = () => {
+        userLogin();
+        // navigate("/");
     }
+
     return (
         <div className="login">
             <Card
@@ -36,29 +42,16 @@ const Login = () => {
                     onFinish={handleLogin}
                 >
                     <Form.Item
-                        label="Username"
-                        name="username"
+                        label="E-mail"
+                        name="email"
                         rules={[
                             {
                                 required: true,
-                                message: 'Please input your username!',
+                                message: 'Please enter your e-mail',
                             },
                         ]}
                     >
                         <Input/>
-                    </Form.Item>
-
-                    <Form.Item
-                        label="Password"
-                        name="password"
-                        rules={[
-                            {
-                                required: true,
-                                message: 'Please input your password!',
-                            },
-                        ]}
-                    >
-                        <Input.Password/>
                     </Form.Item>
 
                     <Form.Item
@@ -68,9 +61,8 @@ const Login = () => {
                         }}
                     >
                         <Button type="primary" htmlType="submit">
-                            Login
+                            Next >
                         </Button>
-                        Or <a href="#/register">register now!</a>
                     </Form.Item>
                 </Form>
             </Card>

@@ -3,10 +3,10 @@ import {Card, Col, Image, Rate, Row, Tag} from "antd";
 import {useNavigate} from "react-router-dom";
 import "../../css/list.css"
 
-function List({img_url, name, categories, rating, id}) {
+function List({url, name, cuisine, rating, rid}) {
     const navigate = useNavigate()
     const handleClick = () => {
-        navigate(`/details/${id}`)
+        navigate(`/details/${rid}`)
     }
     return (
         <Col className="col" sm={12} md={8} xl={5}>
@@ -21,13 +21,12 @@ function List({img_url, name, categories, rating, id}) {
             >
                 <div className="part">
                     <div className="cover">
-                        <img src={img_url} alt="loading failed"/>
+                        <img src={url} alt="loading failed"/>
                     </div>
                     <div className="text">
                         <div className="title">{name}</div>
-                        <div className="description">{categories.map((item, index) => {
-                            return <Tag key={index}>{item.title}</Tag>
-                        })}
+                        <div className="description">
+                           <Tag>{cuisine}</Tag>
                         </div>
                         <div className="info">
                             <Row>
@@ -39,7 +38,6 @@ function List({img_url, name, categories, rating, id}) {
                             </Row>
                         </div>
                     </div>
-
                 </div>
             </Card>
         </Col>

@@ -55,6 +55,14 @@ function MyLayout() {
     }
     const handleSearch = (value) => {
         dispatch(search(value))
+        /**
+         * {
+         *     type:"search",
+         *     action:{
+         *         payload:value
+         *     }
+         * }
+         */
     }
     // nav
     let selectedKeys
@@ -67,9 +75,8 @@ function MyLayout() {
         currentItems = items.slice(0, 1)
     }
 
-
     return (
-        <Layout>
+        <Layout style={{minHeight: "100%"}}>
             <Header className="header">
                 <div className="left">
                     <div className="logo">Logo</div>
@@ -83,12 +90,12 @@ function MyLayout() {
                     />
                 </div>
                 <div className="right">
-                    <Search placeholder="Search restaurant" enterButton style={{width: 400}} size="large"
+                    <Search placeholder="Search restaurant" enterButton style={{width: 300}} size="large"
                             onSearch={handleSearch}/>
-                    <Avatar size="large" icon={<Popup/>} style={{marginLeft: 20, marginRight: 40}}/>
+                    <Avatar size="large" icon={<Popup/>} style={{marginLeft: 15}}/>
                 </div>
             </Header>
-            <Content className="content">
+            <Content className="content" style={{minHeight: "100%"}}>
                 <Outlet/>
             </Content>
         </Layout>
