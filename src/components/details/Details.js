@@ -4,42 +4,51 @@ import {Row, Col, Descriptions, Rate, Tag, Button, Form, Input, Modal, Select} f
 import "../../css/details.css";
 import result from "../data/result.json";
 import TextArea from "antd/lib/input/TextArea";
-import {useDeleteRestaurantMutation, useGetRestaurantByIDQuery, useUpdateRestaurantMutation} from "../../api";
+import {
+    useCreateReviewMutation,
+    useDeleteRestaurantMutation,
+    useGetRestaurantByIDQuery,
+    useUpdateRestaurantMutation
+} from "../../api";
 import {useNavigate} from "react-router";
+import {useSelector} from "react-redux";
+import {selectCurrentUser} from "../../store/authSlice";
 
 function Details() {
+    const user_email = useSelector(selectCurrentUser);
     const {rid} = useParams();
     const navigate = useNavigate();
     // call api
     const {data, isFetching: isFetchingRestaurant} = useGetRestaurantByIDQuery({rid});
     const [deleteRestaurant] = useDeleteRestaurantMutation();
-    const [updateRestaurant] = useUpdateRestaurantMutation();
+    const [createReview] = useCreateReviewMutation();
+
     // form control
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [form] = Form.useForm()
-    const handleEdit = () => {
-        form.setFieldsValue({
-            name: data.name,
-            rating: data.rating,
-            cuisine: data.cuisine,
-            address: data.address,
-            phone: data.phone
-        })
-        setIsModalOpen(true)
+    const handleWriteReview = () => {
+        // form.setFieldsValue({
+        //     name: data.name,
+        //     rating: data.rating,
+        //     cuisine: data.cuisine,
+        //     address: data.address,
+        //     phone: data.phone
+        // })
+        setIsModalOpen(true);
     };
     const handleDelete = () => {
         setIsConfirmModalOpen(true);
     };
-    const handleEditFormSubmit = () => {
+    const handleReviewFormSubmit = () => {
         setIsModalOpen(false);
         form.validateFields()
             .then((values) => {
-                form.resetFields()
-                console.log(values);
-                updateRestaurant({...values, rid: rid});
+                form.resetFields();
+                createReview({...values, rid:rid, uid:user_email});
             })
     };
     const handleCancel = () => {
+        form.resetFields();
         setIsModalOpen(false);
     };
 
@@ -68,7 +77,7 @@ function Details() {
             </Col>
             <Col span={14} xs={24} sm={24} md={14} xl={14} className="detail-description">
                 <Descriptions title={data.name} column={1} extra={<div>
-                    <Button type="primary" onClick={handleEdit}>Edit</Button>
+                    <Button type="primary" onClick={handleWriteReview}>Write Review</Button>
                     <Button type="primary" danger style={{marginLeft: 5}} onClick={handleDelete}>Delete</Button>
                 </div>}>
                     <Descriptions.Item>
@@ -86,14 +95,8 @@ function Details() {
                 </Descriptions>
             </Col>
 
-            <Modal title="Edit Restaurant" open={isModalOpen} onOk={handleEditFormSubmit} onCancel={handleCancel} centered>
+            <Modal title="Write Review" open={isModalOpen} onOk={handleReviewFormSubmit} onCancel={handleCancel} centered>
                 <Form labelCol={{span: 5}} form={form}>
-                    <Form.Item
-                        label="Name"
-                        name="name"
-                    >
-                        <Input/>
-                    </Form.Item>
                     <Form.Item
                         label="Rating"
                         name="rating"
@@ -101,22 +104,10 @@ function Details() {
                         <Rate/>
                     </Form.Item>
                     <Form.Item
-                        label="Cuisine"
-                        name="cuisine"
-                    >
-                        <Input/>
-                    </Form.Item>
-                    <Form.Item
-                        label="Address"
-                        name="address"
+                        label="Content"
+                        name="content"
                     >
                         <TextArea rows={3}/>
-                    </Form.Item>
-                    <Form.Item
-                        label="Phone number"
-                        name="phone"
-                    >
-                        <Input/>
                     </Form.Item>
                 </Form>
             </Modal>

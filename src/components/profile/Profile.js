@@ -1,10 +1,17 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import "../../css/profile.css"
 import {Descriptions, Button, Modal, Form, Input} from "antd";
 import {MailOutlined, UserOutlined} from '@ant-design/icons';
 import {Menu} from 'antd';
-import {useUpdateUserMutation, useDeleteUserMutation, useGetUserByEmailQuery} from "../../api";
+import {
+    useUpdateUserMutation,
+    useDeleteUserMutation,
+    useGetUser2Query
+} from "../../api";
 import Table from '../table/Table';
+import {useSelector} from "react-redux";
+import {selectCurrentUser} from "../../store/authSlice";
+import {useNavigate} from "react-router-dom";
 
 
 function getItem(label, key, icon, children, type) {
@@ -18,16 +25,19 @@ function getItem(label, key, icon, children, type) {
 }
 
 const items = [
-    getItem('Basic Information', 1, <UserOutlined/>),
-    getItem('Contact', 2, <MailOutlined/>)
+    getItem('Profile', 1, <UserOutlined/>),
+    getItem('Contact', 2, <MailOutlined/>),
+    getItem('Review', 3, <MailOutlined/>)
 ];
 
 function Profile() {
+    const navigate = useNavigate();
+    // get the current user email
+    const user_email = useSelector(selectCurrentUser);
     // call api
+    const {data:user, isFetching} = useGetUser2Query({email: user_email});
     const [updateUser] = useUpdateUserMutation();
     const [deleteUser] = useDeleteUserMutation();
-    const {data:user, isFetching} = useGetUserByEmailQuery({email:"xxx123@gmail.com"});
-    console.log("profile user", user);
 
     // tab settings
     const [tab, setTab] = useState("1");
@@ -40,26 +50,27 @@ function Profile() {
     const [form] = Form.useForm();
     const handleEditUser = () => {
         // set form values
-        form.setFieldsValue({
-            email: "lz2761@columbia.edu",
-            username: "lz2761@columbia.edu",
-            lastName:"Lulu",
-            firstName:"Zhang"
-        });
         setIsFormModalOpen(true);
+        form.setFieldsValue({
+            email: user.email,
+            username: user.username,
+            lastName: user.last_name,
+            firstName: user.first_name,
+            middleName: user.middle_name
+        });
     };
     const handleFormOk = () => {
         setIsFormModalOpen(false);
         form.validateFields()
             .then((values) => {
                 form.resetFields()
-                console.log(values)
                 updateUser(values);
             })
     };
     const handleFormCancel = () => {
         setIsFormModalOpen(false);
     };
+
     // confirm modal
     const [isConfirmModalOpen, setIsConfirmModalOpen] = useState(false);
     const handleDeleteUser = () => {
@@ -70,10 +81,45 @@ function Profile() {
     };
     const handleConfirmOk = () => {
         setIsConfirmModalOpen(false);
-        deleteUser({email: "445@gmail.com"});
+        deleteUser({email: user_email});
+        navigate('/login');
     };
 
-    return (
+    let content = "";
+    if(!isFetching) {
+        switch(tab) {
+            case "1":
+                content = (
+                    <div>
+                        <Descriptions title={<h2>Profile</h2>} column={1}
+                                      extra={<div>
+                                          <Button danger type={"primary"} onClick={handleDeleteUser}>Delete</Button>
+                                          <Button type={"primary"} onClick={handleEditUser}
+                                                  style={{marginLeft: 7}}>Edit</Button>
+                                      </div>}>
+                            <Descriptions.Item label="E-mail" labelStyle={labelStyle}>{user.email}</Descriptions.Item>
+                            <Descriptions.Item label="Username" labelStyle={labelStyle}>{user.username}</Descriptions.Item>
+                            <Descriptions.Item label="Last Name"
+                                               labelStyle={labelStyle}>{user.last_name}</Descriptions.Item>
+                            <Descriptions.Item label="Middle Name"
+                                               labelStyle={labelStyle}>{user.middle_name}</Descriptions.Item>
+                            <Descriptions.Item label="First Name"
+                                               labelStyle={labelStyle}>{user.first_name}</Descriptions.Item>
+                        </Descriptions>
+                    </div>
+                )
+                break;
+            case "2" :
+                content = (<div><Table/></div>)
+                break;
+            case "3":
+                content = (
+                    <h2>Review</h2>
+
+                )
+        }
+    }
+    return isFetching?"Loading" : (
         <div className="profile">
             <div className="menu">
                 <Menu
@@ -87,26 +133,7 @@ function Profile() {
             </div>
             <div className="content-profile">
                 {
-                    tab === "1" ?
-                        (
-                            <div>
-                                <Descriptions title={<div className="content-title">Basic Information</div>} column={1}
-                                              extra={<div>
-                                                  <Button danger type={"primary"} onClick={handleDeleteUser}>Delete</Button>
-                                                  <Button type={"primary"} onClick={handleEditUser} style={{marginLeft: 7}}>Edit</Button>
-                                              </div>}>
-                                    <Descriptions.Item label="E-mail" labelStyle={labelStyle}>email</Descriptions.Item>
-                                    <Descriptions.Item label="Username" labelStyle={labelStyle}>username</Descriptions.Item>
-                                    <Descriptions.Item label="Last Name" labelStyle={labelStyle}>Alice </Descriptions.Item>
-                                    <Descriptions.Item label="Middle Name" labelStyle={labelStyle}>Mary</Descriptions.Item>
-                                    <Descriptions.Item label="First Name" labelStyle={labelStyle}>Cummingham</Descriptions.Item>
-                                </Descriptions>
-                            </div>
-
-                        ) :
-                        (<div>
-                            <Table/>
-                        </div>)
+                   content
                 }
             </div>
 
@@ -117,7 +144,7 @@ function Profile() {
                         label="E-mail"
                         name="email"
                     >
-                        <Input value="alice"/>
+                        <Input/>
                     </Form.Item>
                     <Form.Item
                         label="Username"
@@ -150,8 +177,6 @@ function Profile() {
             <Modal title="Confirmation" open={isConfirmModalOpen} onOk={handleConfirmOk} onCancel={handleConfirmCancel}>
                 <p>Are you sure you want to delete your account?</p>
             </Modal>
-
-
         </div>
     );
 }

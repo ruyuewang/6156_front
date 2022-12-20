@@ -1,16 +1,15 @@
 import React, {useState} from 'react';
 import {Button, Form, Input, InputNumber, Modal, Table as AntTable} from 'antd';
-import {useCreateContactMutation, useGetContactQuery} from "../../api";
+import {
+    useCreateContactMutation,
+    useDeleteContactMutation,
+    useGetContactQuery,
+    useUpdateContactMutation
+} from "../../api";
+import {useSelector} from "react-redux";
+import {selectCurrentUser} from "../../store/authSlice";
 
-// const originData = [];
-// for (let i = 0; i < 100; i++) {
-//     originData.push({
-//         key: i.toString(),
-//         type: `Edrward ${i}`,
-//         contact: 32,
-//         kind: `London Park no. ${i}`,
-//     });
-// }
+
 const EditableCell = ({
                           editing,
                           dataIndex,
@@ -46,19 +45,31 @@ const EditableCell = ({
     );
 };
 const Table = () => {
-    const {data, isFetching} = useGetContactQuery({uid:"xxx123@gmail.com"});
+    const current_user = useSelector(selectCurrentUser);
+    // call api
+    const [updateContact] = useUpdateContactMutation();
+    let {data, isFetching} = useGetContactQuery({uid:current_user});
+    const [deleteContactAPI] = useDeleteContactMutation();
+
+    let dataWithKey = [];
+    if(!isFetching) {
+        dataWithKey = data.slice().map((item, index)=> {
+            return {...item, key: index};
+        });
+    }
     const [createContact] = useCreateContactMutation();
-    const [form] = Form.useForm(); // form
-    const [addForm] = Form.useForm(); // add form
-    const [searchForm] = Form.useForm() // search form
-    // const [data, setData] = useState(originData);
+    // form related
+    const [form] = Form.useForm();
+    const [addForm] = Form.useForm();
+    const [searchForm] = Form.useForm() ;
     const [editingKey, setEditingKey] = useState('');
     const isEditing = (record) => record.key === editingKey;
     const [openAdd, setOpenAdd] = useState(false); // add popup
-    const [isSearchModalOpen, setIsSearchModalOpen] = useState(false)
+    const [isSearchModalOpen, setIsSearchModalOpen] = useState(false);
+
 
     // form related
-    const edit = (record) => {
+    const editContact = (record) => {
         form.setFieldsValue({
             type: '',
             contact: '',
@@ -67,13 +78,18 @@ const Table = () => {
         });
         setEditingKey(record.key);
     };
+    const deleteContact = (record) => {
+        //@TODO delete contact
+        console.log("delete contact", record);
+        deleteContactAPI({...record, uid: current_user});
+    };
     const cancel = () => {
         setEditingKey('');
     };
-    const save = async (key) => {
+    const saveContact = async (key) => {
         try {
             const row = await form.validateFields();
-            const newData = [...data];
+            const newData = [...dataWithKey];
             const index = newData.findIndex((item) => key === item.key);
             if (index > -1) {
                 const item = newData[index];
@@ -81,13 +97,15 @@ const Table = () => {
                     ...item,
                     ...row,
                 });
-                // setData(newData);
+                // @TODO send the edit request
+                //setData(newData);
                 setEditingKey('');
             } else {
                 newData.push(row);
                 // setData(newData);
                 setEditingKey('');
             }
+            updateContact({...row, uid: current_user});
         } catch (errInfo) {
             console.log('Validate Failed:', errInfo);
         }
@@ -109,7 +127,7 @@ const Table = () => {
             title: 'Kind',
             dataIndex: 'kind',
             width: '20%',
-            editable: true,
+            editable: false,
         },
         {
             title: 'Operation',
@@ -121,7 +139,7 @@ const Table = () => {
                     <span>
                         <Button
                             type="primary"
-                            onClick={() => save(record.key)}
+                            onClick={() => saveContact(record.key)}
                             style={{
                                 marginRight: 8,
                             }}>Save</Button>
@@ -137,9 +155,11 @@ const Table = () => {
                         <Button
                             type="primary"
                             disabled={editingKey !== ''}
-                            onClick={() => edit(record)}
-                        >Edit</Button>&nbsp;
-                        <Button type="primary" danger>Delete</Button>
+                            onClick={() => editContact(record)}
+                        >
+                            Edit
+                        </Button>&nbsp;
+                        <Button type="primary" danger  onClick={() => deleteContact(record)}>Delete</Button>
                     </div>
                 );
             },
@@ -179,7 +199,6 @@ const Table = () => {
                         return (
                             <div style={{display: "flex", justifyContent: "flex-end"}}>
                                 <Button type="primary" onClick={() => setOpenAdd(true)}>Add</Button>&nbsp;
-                                <Button type="primary" onClick={() => setIsSearchModalOpen(true)}>Search</Button>
                             </div>
                         )
                     }}
@@ -189,7 +208,7 @@ const Table = () => {
                         },
                     }}
                     bordered
-                    dataSource={data}
+                    dataSource={dataWithKey}
                     columns={mergedColumns}
                     rowClassName="editable-row"
                     pagination={{
@@ -210,8 +229,9 @@ const Table = () => {
                     addForm
                         .validateFields()
                         .then((values) => {
-                            form.resetFields();
-                            createContact({...values, uid:"xxx123@gmail.com"});
+                            addForm.resetFields();
+                            createContact({...values, uid:current_user});
+                            setOpenAdd(false);
                         })
                         .catch((info) => {
                             console.log('Validate Failed:', info);

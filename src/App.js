@@ -7,17 +7,20 @@ import MyLayout from "./components/layout/MyLayout";
 import Login from "./components/login/Login";
 import Register from "./components/register/Register";
 import Profile from "./components/profile/Profile";
+import RequireAuth from "./components/requireAuth/RequireAuth";
 
 
 function App() {
   return (
       <Routes>
         <Route element={<MyLayout/>}>
-          <Route path="/" element={<Home/>}/>
-          <Route path="/details">
-            <Route path=":rid" element={<Details/>}/>
-          </Route>
-          <Route path="/user" element={<Profile/>}/>
+            <Route path="*" element={<RequireAuth/>}>
+                <Route index element={<Home/>}/>
+                <Route path="details">
+                    <Route path=":rid" element={<Details/>}/>
+                </Route>
+                <Route path="user" element={<Profile/>}/>
+            </Route>
         </Route>
         <Route path="/login" element={<Login/>}/>
         <Route path="/register" element={<Register/>}/>

@@ -4,21 +4,26 @@ import {Avatar, Layout, List, Menu, Popover} from "antd";
 import Search from "antd/es/input/Search";
 import {UserOutlined} from "@ant-design/icons";
 import {useNavigate} from "react-router-dom";
-import {useDispatch} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 import {search} from "../../store/searchSlice";
 import "../../css/layout.css"
+import {logOut, selectCurrentUser} from "../../store/authSlice";
 
 const Popup = () => {
-    const navigate = useNavigate()
+    // get the current user email
+    const user_email = useSelector(selectCurrentUser);
+    const navigate = useNavigate();
+    const dispatch = useDispatch();
     const handleLogout = () => {
-        navigate("/login")
+        dispatch(logOut());
+        navigate("/login");
     }
     const handleProfile = ()=>{
         navigate("/user")
     }
     const content = (
-        <List header={<div>User01</div>}>
-            <List.Item onClick={handleProfile}>Profile</List.Item>
+        <List header={<div>{user_email}</div>}>
+            <List.Item onClick={handleProfile}>User Page</List.Item>
             <List.Item onClick={handleLogout}>Logout</List.Item>
         </List>
     );
@@ -79,7 +84,7 @@ function MyLayout() {
         <Layout style={{minHeight: "100%"}}>
             <Header className="header">
                 <div className="left">
-                    <div className="logo">Logo</div>
+                    <div className="logo">Deadline Fighter</div>
                     <Menu
                         selectedKeys={selectedKeys}
                         theme={"dark"}

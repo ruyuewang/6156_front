@@ -4,7 +4,7 @@ import List from "./List";
 import {useSelector} from "react-redux";
 import "../../css/lists.css"
 import {selectCurrentSearch} from "../../store/searchSlice";
-import {useGetAllRestaurantsQuery, useGetRestaurantsMutation} from "../../api";
+import {useGetAllRestaurantsMutation, useGetAllRestaurantsQuery, useGetRestaurantsMutation} from "../../api";
 
 function Lists({limit = 12, offset= 0}) {
     const [current, setCurrent] = useState(1)
@@ -12,8 +12,8 @@ function Lists({limit = 12, offset= 0}) {
     const [data, setData] = useState([])
     const [total, setTotal] = useState(0)
     // call api
-    const [getRestaurants]  = useGetRestaurantsMutation();
-    const {data: allRestaurantsData, isFetching} = useGetAllRestaurantsQuery();
+    const [getRestaurants] = useGetRestaurantsMutation();
+    const [getAllRestaurants] = useGetAllRestaurantsMutation();
 
     useEffect(()=> {
         setCurrent(1)
@@ -21,19 +21,20 @@ function Lists({limit = 12, offset= 0}) {
 
     useEffect(() => {
         (async ()=> {
-            let result = (await getRestaurants({query:"c", offset: 0, limit: 12})).data
-            const filterData = result.filter(item => {
-                return (new RegExp(search, "i")).test(item.name)
-            });
-            setTotal(filterData.length);
-            setData(filterData);
+            let result = (await getRestaurants({query:search?search:"",offset: 0, limit: 12})).data;
+            setTotal(result.count);
+            setData(result.restaurants);
         })()
-    }, [current, limit, search])
-    const handleChange = (page) => {
-        setCurrent(page)
+    }, [limit, search])
+    const handleChange = async (page) => {
+        let result = (await getRestaurants({query:search?search:"",offset: page-1, limit: 12})).data;
+        // @TODO
+        setTotal(result.count);
+        setData(result.restaurants);
+        setCurrent(page);
     }
 
-    return isFetching?"Loading" : (
+    return (
         <div style={{
             display:"flex",
             flexDirection:"column",
@@ -45,7 +46,7 @@ function Lists({limit = 12, offset= 0}) {
                     data.map(d => (<List key={d.rid} {...d}/>))
                 }
             </Row>
-            <Pagination current={current} total={data.length} pageSize={limit} onChange={handleChange}/>
+            <Pagination current={current} total={total} onChange={handleChange} showSizeChanger={false}/>
         </div>
     );
 }

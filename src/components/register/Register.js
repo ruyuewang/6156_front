@@ -3,9 +3,12 @@ import {
     Form,
     Input,
 } from 'antd';
-import React from 'react';
+import React, {useEffect} from 'react';
 import "../../css/register.css"
 import {useNavigate} from "react-router-dom";
+import {useSelector} from "react-redux";
+import {selectCurrentUser} from "../../store/authSlice";
+import {useCreateUserCompositeMutation} from "../../api";
 
 const formItemLayout = {
     labelCol: {
@@ -39,41 +42,49 @@ const tailFormItemLayout = {
 };
 
 const Register = () => {
+    const navigate = useNavigate();
+    // get current user email
+    const user_email = useSelector(selectCurrentUser);
+    // call api
+    const [createUser,{isLoading,isFetching,error}] = useCreateUserCompositeMutation();
+    // form related
     const [form] = Form.useForm();
-    const navigate = useNavigate()
-    const handleLogin = () => {
-        navigate("/login")
-    }
+    useEffect(()=> {
+        form.setFieldValue("email", user_email);
+    });
+    const submitForm = async() => {
+        form.validateFields().then(values => {
+            //@TODO call api , add await
+            const response = createUser(values);
+            console.log("response register", response)
+            if(response.error) {
+                alert("Fail to register. Please try again")
+            } else {
+                navigate('/');
+            }
+        } );
+    };
+
     return (
         <div className="register">
             <Card
                 style={{
                     width: 500,
                 }}
-                title="Sign Up"
-                extra={<Button onClick={handleLogin}>Login</Button>}
+                title="Fill information"
             >
                 <Form
                     {...formItemLayout}
                     form={form}
                     name="register"
                     scrollToFirstError
+                    onFinish={submitForm}
                 >
                     <Form.Item
                         name="email"
                         label="E-mail"
-                        rules={[
-                            {
-                                type: 'email',
-                                message: 'The input is not valid E-mail!',
-                            },
-                            {
-                                required: true,
-                                message: 'Please enter your E-mail',
-                            },
-                        ]}
                     >
-                        <Input placeholder="E-mail must be gmail"/>
+                        <Input disabled/>
                     </Form.Item>
                     <Form.Item
                         name="username"
@@ -126,6 +137,35 @@ const Register = () => {
                         ]}
                     >
                         <Input placeholder="Please input your last name"/>
+                    </Form.Item>
+                    <Form.Item
+                        name="contact"
+                        label="Contact"
+                        style={{
+                            marginBottom: 0,
+                        }}
+                        rules={[
+                            {
+                                required: true,
+                            },
+                        ]}
+                    >
+                        <Form.Item
+                            name="type"
+                        >
+                            <Input placeholder="e.g.E-mail" />
+                        </Form.Item>
+                        <Form.Item
+                            name="contact"
+
+                        >
+                            <Input placeholder="e.g.123@gmail.com" />
+                        </Form.Item>
+                        <Form.Item
+                            name="kind"
+                        >
+                            <Input placeholder="e.g.Personal" />
+                        </Form.Item>
                     </Form.Item>
 
                     <Form.Item {...tailFormItemLayout}>

@@ -4,35 +4,27 @@ module.exports = function (app) {
         createProxyMiddleware("/users",{
             target: "https://93dqximkq0.execute-api.us-east-1.amazonaws.com",
             changeOrigin: true,
-            // pathRewrite: {'^/users': ''},
-            onProxyRes: (proxyRes, req, res) => {
-                res.setHeader('Access-Control-Allow-Origin', '*')
-                res.setHeader('Access-Control-Allow-Methods', 'OPTIONS,POST,GET')
-                res.setHeader('Access-Control-Allow-Credentials', "true")
-            }
+            pathRewrite: {'^/users': ''},
         }),
         createProxyMiddleware("/restaurants",{
             target: "https://93dqximkq0.execute-api.us-east-1.amazonaws.com",
             changeOrigin: true,
-            // pathRewrite: {'^/restaurants': ''},
-            onProxyRes: (proxyRes, req, res) => {
-                res.setHeader('Access-Control-Allow-Origin', '*')
-                res.setHeader('Access-Control-Allow-Methods', 'OPTIONS,POST,GET')
-            }
+            pathRewrite: {'^/restaurants': ''},
         }),
         createProxyMiddleware("/contacts",{
             target: "https://93dqximkq0.execute-api.us-east-1.amazonaws.com",
             changeOrigin: true,
-            // pathRewrite: {'^/contacts': ''},
-            onProxyRes: (proxyRes, req, res) => {
-                res.setHeader('Access-Control-Allow-Origin', '*')
-                res.setHeader('Access-Control-Allow-Methods', 'OPTIONS,POST,GET')
-            }
+            pathRewrite: {'^/contacts': ''},
         }),
         createProxyMiddleware("/composite",{
             target: "https://93dqximkq0.execute-api.us-east-1.amazonaws.com",
             changeOrigin: true,
-            // pathRewrite: {'^/composite': ''},
-        })
+            pathRewrite: {'^/composite': ''},
+        }),
+        createProxyMiddleware("/reviews",{
+            target: "https://93dqximkq0.execute-api.us-east-1.amazonaws.com",
+            changeOrigin: true,
+            pathRewrite: {'^/reviews': ''},
+        }),
     )
 };
