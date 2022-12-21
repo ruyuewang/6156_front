@@ -13,6 +13,7 @@ import {
 import {useNavigate} from "react-router";
 import {useSelector} from "react-redux";
 import {selectCurrentUser} from "../../store/authSlice";
+import ReviewForRestaurant from "../review/ReviewForRestaurant";
 
 function Details() {
     const user_email = useSelector(selectCurrentUser);
@@ -93,6 +94,7 @@ function Details() {
                         {data.phone}
                     </Descriptions.Item>
                 </Descriptions>
+                <ReviewForRestaurant/>
             </Col>
 
             <Modal title="Write Review" open={isModalOpen} onOk={handleReviewFormSubmit} onCancel={handleCancel} centered>

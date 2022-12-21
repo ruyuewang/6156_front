@@ -12,7 +12,7 @@ function Lists({limit = 12, offset= 0}) {
     const [data, setData] = useState([])
     const [total, setTotal] = useState(0)
     // call api
-    const [getRestaurants] = useGetRestaurantsMutation();
+    const [getRestaurants, {isFetching, isLoading}] = useGetRestaurantsMutation();
     const [getAllRestaurants] = useGetAllRestaurantsMutation();
 
     useEffect(()=> {
@@ -28,13 +28,12 @@ function Lists({limit = 12, offset= 0}) {
     }, [limit, search])
     const handleChange = async (page) => {
         let result = (await getRestaurants({query:search?search:"",offset: page-1, limit: 12})).data;
-        // @TODO
         setTotal(result.count);
         setData(result.restaurants);
         setCurrent(page);
     }
 
-    return (
+    return isFetching?"Loading...": (
         <div style={{
             display:"flex",
             flexDirection:"column",

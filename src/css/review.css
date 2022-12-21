@@ -1,0 +1,15 @@
+.review .ant-card-head{
+    border: none!important;
+}
+.review{
+    margin-bottom: 10px;
+}
+.review .ant-card-body{
+    padding: 0 24px 12px 24px;
+}
+.review .review-content{
+    margin: 12px 0 12px;
+}
+.review .ant-form-item{
+    margin-bottom: 12px;
+}

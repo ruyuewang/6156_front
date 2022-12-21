@@ -12,6 +12,7 @@ import Table from '../table/Table';
 import {useSelector} from "react-redux";
 import {selectCurrentUser} from "../../store/authSlice";
 import {useNavigate} from "react-router-dom";
+import Review from "../review/Review";
 
 
 function getItem(label, key, icon, children, type) {
@@ -91,7 +92,7 @@ function Profile() {
             case "1":
                 content = (
                     <div>
-                        <Descriptions title={<h2>Profile</h2>} column={1}
+                        <Descriptions title={<h1>Profile</h1>} column={1}
                                       extra={<div>
                                           <Button danger type={"primary"} onClick={handleDeleteUser}>Delete</Button>
                                           <Button type={"primary"} onClick={handleEditUser}
@@ -114,8 +115,10 @@ function Profile() {
                 break;
             case "3":
                 content = (
-                    <h2>Review</h2>
-
+                    <div>
+                        <h1>Review</h1>
+                        <Review/>
+                    </div>
                 )
         }
     }
@@ -127,7 +130,6 @@ function Profile() {
                     style={{width: 230}}
                     defaultSelectedKeys={['1']}
                     defaultOpenKeys={['sub1']}
-                    mode="inline"
                     items={items}
                 />
             </div>

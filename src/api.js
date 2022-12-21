@@ -22,7 +22,7 @@ const baseQueryWithReauth = async (args, api, extraOptions) => {
 export const api = createApi({
     reducerPath: 'api',
     baseQuery: baseQueryWithReauth,
-    tagTypes: ['Contacts', 'Profile'],
+    tagTypes: ['Contacts', 'Profile', 'UserReview', 'RestReview'],
     endpoints: builder => ({
         // User API
         login: builder.mutation({
@@ -137,19 +137,38 @@ export const api = createApi({
 
         // Reviews API
         getReviewsByRestaurant: builder.query({
-            query: ({rid}) => `reviews/api/reviews/id/${rid}`,
+            query: ({rid}) => `reviews/api/reviews/rid/${rid}`,
+            providesTags: ['RestReview']
+        }),
+        getReviewsByUser: builder.query({
+            query: ({uid}) => `reviews/api/reviews/uid/${uid}`,
+            providesTags: ['UserReview']
         }),
         createReview: builder.mutation({
             query: ({rid, uid, rating, content}) => ({
                 url: `reviews/api/reviews/createall/${rid}/${uid}/${rating}/${content}`,
                 method: "POST"
             }),
-        })
+            invalidatesTags: ["RestReview"]
+        }),
+        updateReview: builder.mutation({
+            query: ({rid, rating, content}) => ({
+                url: `reviews/api/reviews/update/${rid}/${rating}/${content}`,
+                method: "POST"
+            })
+        }),
+        deleteReview: builder.mutation({
+            query: ({rid}) => ({
+                url: `reviews/api/reviews/delete/${rid}`,
+                method: "POST"
+            })
+        }),
+        invalidatesTags: ["UserReview"]
     })
 })
 
 // Export the auto-generated hook for the endpoint
-// const [modify,{isLoading,isFetching,error}] = useModifyMutation()
+// const [modify,c] = useModifyMutation()
 // const {data, isFetching} = useGetQuery()
 export const {
     useLoginMutation,
@@ -171,5 +190,8 @@ export const {
     useDeleteUserMutation,
     useCreateUserCompositeMutation,
 
-    useCreateReviewMutation
+    useGetReviewsByRestaurantQuery,
+    useGetReviewsByUserQuery,
+    useCreateReviewMutation,
+    useDeleteReviewMutation
 } = api

@@ -20,7 +20,10 @@ const EditableCell = ({
                           children,
                           ...restProps
                       }) => {
-    const inputNode = inputType === 'number' ? <InputNumber/> : <Input/>;
+    let inputNode = inputType === 'number' ? <InputNumber/> : <Input/>;
+    if(dataIndex === 'kind') {
+        inputNode = <Input disabled/>
+    }
     return (
         <td {...restProps}>
             {editing ? (
@@ -97,7 +100,6 @@ const Table = () => {
                     ...item,
                     ...row,
                 });
-                // @TODO send the edit request
                 //setData(newData);
                 setEditingKey('');
             } else {
@@ -105,6 +107,7 @@ const Table = () => {
                 // setData(newData);
                 setEditingKey('');
             }
+            console.log("edit contact", row)
             updateContact({...row, uid: current_user});
         } catch (errInfo) {
             console.log('Validate Failed:', errInfo);
@@ -127,7 +130,7 @@ const Table = () => {
             title: 'Kind',
             dataIndex: 'kind',
             width: '20%',
-            editable: false,
+            editable: true,
         },
         {
             title: 'Operation',
@@ -192,7 +195,7 @@ const Table = () => {
 
     return isFetching? "Loading" : (
         <div>
-            <h2>Contact</h2>
+            <h1>Contact</h1>
             <Form form={form} component={false}>
                 <AntTable
                     title={() => {
