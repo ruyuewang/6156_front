@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Button, Form, Input, InputNumber, Modal, Table as AntTable} from 'antd';
+import {Button, Form, Input, InputNumber, Modal, Select, Table as AntTable} from 'antd';
 import {
     useCreateContactMutation,
     useDeleteContactMutation,
@@ -9,7 +9,7 @@ import {
 import {useSelector} from "react-redux";
 import {selectCurrentUser} from "../../store/authSlice";
 
-
+const { Option } = Select;
 const EditableCell = ({
                           editing,
                           dataIndex,
@@ -23,6 +23,15 @@ const EditableCell = ({
     let inputNode = inputType === 'number' ? <InputNumber/> : <Input/>;
     if(dataIndex === 'kind') {
         inputNode = <Input disabled/>
+    }
+    if(dataIndex === 'type') {
+        inputNode = <Select disabled
+            allowClear
+        >
+            <Option value="email">E-mail</Option>
+            <Option value="phone">Phone</Option>
+            <Option value="addresse">Address</Option>
+        </Select>
     }
     return (
         <td {...restProps}>
@@ -72,8 +81,7 @@ const Table = () => {
 
 
     // form related
-    const editContact = (record) => {
-        form.setFieldsValue({
+    const editContact = (record) => {form.setFieldsValue({
             type: '',
             contact: '',
             kind: '',
@@ -82,8 +90,6 @@ const Table = () => {
         setEditingKey(record.key);
     };
     const deleteContact = (record) => {
-        //@TODO delete contact
-        console.log("delete contact", record);
         deleteContactAPI({...record, uid: current_user});
     };
     const cancel = () => {
@@ -107,7 +113,6 @@ const Table = () => {
                 // setData(newData);
                 setEditingKey('');
             }
-            console.log("edit contact", row)
             updateContact({...row, uid: current_user});
         } catch (errInfo) {
             console.log('Validate Failed:', errInfo);
@@ -123,7 +128,7 @@ const Table = () => {
         {
             title: 'Contact',
             dataIndex: 'contact',
-            width: '25%',
+            width: '30%',
             editable: true,
         },
         {
@@ -135,7 +140,7 @@ const Table = () => {
         {
             title: 'Operation',
             dataIndex: 'operation',
-            width: "40%",
+            width: "35%",
             render: (_, record) => {
                 const editable = isEditing(record);
                 return editable ? (
@@ -250,21 +255,28 @@ const Table = () => {
                     <Form.Item
                         name="type"
                         label="Type"
-                        rules={[{required: true, message: 'Please input the type of contact!'}]}
+                        rules={[{required: true, message: 'Please select the type of contact'}]}
                     >
-                        <Input/>
+                        <Select
+                            placeholder="Please select the type of contact"
+                            allowClear
+                        >
+                            <Option value="email">E-mail</Option>
+                            <Option value="phone">Phone</Option>
+                            <Option value="address">Address</Option>
+                        </Select>
                     </Form.Item>
                     <Form.Item
                         name="contact"
                         label="Contact"
-                        rules={[{required: true, message: 'Please input the contact of contact!'}]}
+                        rules={[{required: true, message: 'Please input the contact'}]}
                     >
                         <Input/>
                     </Form.Item>
                     <Form.Item
                         name="kind"
                         label="Kind"
-                        rules={[{required: true, message: 'Please input the kind of contact!'}]}
+                        rules={[{required: true, message: 'Please input the kind of contact'}]}
                     >
                         <Input/>
                     </Form.Item>

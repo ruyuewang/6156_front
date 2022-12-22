@@ -1,11 +1,12 @@
 .profile {
     width: 100%;
+    position: relative;
 }
 
 .profile .menu {
-    position: fixed;
-    left: 50px;
-    top: 100px;
+    position: absolute;
+    left: 10px;
+    top: 5px;
     z-index: 100;
 }
 

@@ -108,7 +108,8 @@ export const api = createApi({
             query: ({uid, type, kind}) => ({
                 url: `contacts/api/contacts/delete/${uid}/${type}/${kind}`,
                 method: "DELETE"
-            })
+            }),
+            invalidatesTags: ["Contacts"]
         }),
 
         // Composite API
@@ -161,9 +162,9 @@ export const api = createApi({
             query: ({rid}) => ({
                 url: `reviews/api/reviews/delete/${rid}`,
                 method: "POST"
-            })
+            }),
+            invalidatesTags: ["UserReview"]
         }),
-        invalidatesTags: ["UserReview"]
     })
 })
 

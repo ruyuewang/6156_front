@@ -13,3 +13,10 @@
 .review .ant-form-item{
     margin-bottom: 12px;
 }
+
+.restaurant-pagination {
+    display: flex;
+    padding-top: 10px !important;
+    justify-content: center;
+
+}

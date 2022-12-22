@@ -70,7 +70,6 @@ function Review({rrid, rating, content, uid, rid, name}) {
                             </Form.Item>
                         </Form>
                     </>
-
                 ) : (
                     <>
                         <Rate disabled allowHalf defaultValue={rating}/>

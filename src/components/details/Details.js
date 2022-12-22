@@ -63,8 +63,9 @@ function Details() {
     };
     const handleConfirmOk = () => {
         setIsConfirmModalOpen(false);
-        let res = deleteRestaurant({rid});
+        deleteRestaurant({rid});
         navigate("/");
+        // alert("Delete successfully!");
     };
 
     return isFetchingRestaurant?"Loading" :(
